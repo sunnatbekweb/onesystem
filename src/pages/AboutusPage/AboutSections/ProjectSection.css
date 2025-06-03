@@ -1,0 +1,46 @@
+.project {
+}
+.project__title {
+  margin-right: auto !important;
+  font-family: "ABCMonumentGrotesk";
+}
+.project__bottom-box {
+  margin-left: 650px !important;
+}
+.project__bottom-mini-box {
+}
+.project__bottom-box-texts {
+  font-family: "ABCMonumentGrotesk";
+}
+@media (max-width: 1024px) {
+  .project {
+  }
+  .project__title {
+    margin-right: 0 !important;
+    font-family: "ABCMonumentGrotesk";
+  }
+  .project__bottom-box {
+    margin-left: 0px !important;
+  }
+  .project__bottom-mini-box {
+  }
+  .project__bottom-box-texts {
+    font-family: "ABCMonumentGrotesk";
+  }
+}
+@media (max-width: 767px) {
+  .project {
+  }
+  .project__title {
+    margin-right: 0 !important;
+    font-family: "ABCMonumentGrotesk";
+  }
+  .project__bottom-box {
+    margin-left: 0px !important;
+  }
+  .project__bottom-mini-box {
+  }
+  .project__bottom-box-texts {
+    font-family: "ABCMonumentGrotesk";
+  }
+}

@@ -1,0 +1,11 @@
+.header {
+  width: 100%;
+  background-image: url("../../../assets/images/hero__background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header__container {
+}
+.header__hr {
+}

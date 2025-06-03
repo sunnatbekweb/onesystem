@@ -1,0 +1,227 @@
+.team {
+}
+.team__container {
+}
+.team__title {
+  font-family: "ABCMonumentGrotesk";
+}
+.team__main-box:last-child {
+  border-bottom: none;
+}
+.team__position-box {
+}
+.team__position-box-text {
+  font-family: "ABCMonumentGrotesk";
+}
+.team__position-box-texts {
+  font-family: "ABCMonumentGrotesk";
+}
+.team__name-box {
+}
+.team__name-box-text {
+  font-family: "ABCMonumentGrotesk";
+}
+.team__name-box-texts {
+  font-family: "ABCMonumentGrotesk";
+  word-break: break-word;
+  white-space: normal;
+}
+.team__name-user-image {
+  pointer-events: none;
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  opacity: 0.85 !important;
+}
+.team__secondPosition-box {
+}
+.team__secondPosition-box-texts {
+  font-family: "ABCMonumentGrotesk";
+}
+.team__networking-box {
+}
+.team__networking-box-text {
+  font-family: "ABCMonumentGrotesk";
+}
+.team__networking-mini-box {
+}
+.team__networking-box-link {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  & svg {
+    transform: rotate(45deg);
+    transition: all 200ms ease;
+    & path {
+      transition: all 200ms ease;
+    }
+  }
+  &:hover {
+    & svg {
+      transition: all 200ms ease;
+      transform: none !important;
+      transform: rotate(0);
+      & path {
+        stroke: #cf734a;
+      }
+    }
+  }
+}
+.team__networking-box-texts {
+  font-family: "ABCMonumentGrotesk";
+}
+.team__networking-box-icon {
+}
+@media (max-width: 1024px) {
+  .team {
+  }
+  .team__container {
+  }
+  .team__title {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .team__main-box:last-child {
+    border-bottom: none;
+  }
+  .team__position-box {
+  }
+  .team__position-box-text {
+    word-break: break-word;
+    white-space: normal;
+    font-family: "ABCMonumentGrotesk";
+  }
+  .team__position-box-texts {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .team__name-box {
+  }
+  .team__name-box-text {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .team__name-box-texts {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .team__name-user-image {
+    pointer-events: none !important;
+    transition: none !important;
+    opacity: unset !important;
+  }
+  .team__secondPosition-box {
+  }
+  .team__secondPosition-box-texts {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .team__networking-box {
+  }
+  .team__networking-box-text {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .team__networking-mini-box {
+  }
+  .team__networking-box-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    & svg {
+      transform: rotate(0deg);
+      transition: 100ms ease all !important;
+      & path {
+        transition: 100ms ease all !important;
+      }
+    }
+    &:active {
+      & p {
+        transform: none !important;
+        color: #cf734a;
+      }
+      & svg {
+        transform: scale(0) !important;
+        transform: rotate(0deg);
+        & path {
+          stroke: none !important;
+        }
+      }
+    }
+  }
+  .team__networking-box-texts {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .team__networking-box-icon {
+  }
+}
+@media (max-width: 767px) {
+  .team {
+  }
+  .team__container {
+  }
+  .team__title {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .team__main-box:last-child {
+    border-bottom: none;
+  }
+  .team__position-box {
+  }
+  .team__position-box-text {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .team__position-box-texts {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .team__name-box {
+  }
+  .team__name-box-text {
+    word-break: break-word;
+    white-space: normal;
+    font-family: "ABCMonumentGrotesk";
+  }
+  .team__name-box-texts {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .team__name-user-image {
+  }
+  .team__secondPosition-box {
+  }
+  .team__secondPosition-box-texts {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .team__networking-box {
+  }
+  .team__networking-box-text {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .team__networking-mini-box {
+  }
+  .team__networking-box-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    & svg {
+      transform: rotate(0deg);
+      transition: 100ms ease all !important;
+      & path {
+        transition: 100ms ease all !important;
+      }
+    }
+    &:active {
+      & p {
+        transform: none !important;
+        color: #cf734a;
+      }
+      & svg {
+        transform: scale(0) !important;
+        transform: rotate(0deg);
+        & path {
+          stroke: none !important;
+        }
+      }
+    }
+  }
+  .team__networking-box-texts {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .team__networking-box-icon {
+  }
+}

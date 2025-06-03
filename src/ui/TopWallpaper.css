@@ -1,0 +1,92 @@
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-180%);
+  }
+}
+.topWallpaper__box {
+  overflow: hidden;
+  font-family: "ABCMonumentGrotesk" !important;
+  font-size: 280px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 205px;
+  width: 100% !important;
+  white-space: nowrap;
+}
+.topWallpaper__title {
+  font-family: "ABCMonumentGrotesk" !important;
+  animation: marquee 5s linear infinite;
+}
+@media (max-width: 1024px) {
+  .topWallpaper__box {
+    font-size: 280px;
+    line-height: 205px;
+    white-space: nowrap;
+  }
+  .topWallpaper__title {
+    font-family: "ABCMonumentGrotesk" !important;
+    animation: marquee 4s linear infinite;
+  }
+  @keyframes marquee {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-150%);
+    }
+  }
+}
+@media (max-width: 820px) {
+  .topWallpaper__box {
+    font-size: 280px;
+    line-height: 205px;
+    white-space: nowrap;
+  }
+  .topWallpaper__title {
+    font-family: "ABCMonumentGrotesk" !important;
+    animation: marquee 4s linear infinite;
+  }
+  @keyframes marquee {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-90%);
+    }
+  }
+}
+@media (max-width: 767px) {
+  .topWallpaper__box {
+    font-size: 120px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 88px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    white-space: normal;
+    word-break: break-word;
+    max-height: calc(88px * 2 + -7px);
+    overflow: hidden !important;
+    padding-bottom: 5px;
+    text-decoration: none !important;
+  }
+  .topWallpaper__title {
+    font-family: "ABCMonumentGrotesk" !important;
+    animation: none !important;
+  }
+  @keyframes marquee {
+    from {
+      transform: translateX(-140%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.services {
+}
+.services__container {
+}
+.services__title {
+  margin-right: auto;
+  font-family: "ABCMonumentGrotesk";
+}
+.services__hr {
+}
+.services__main-box {
+}
+.services__mini-box {
+}
+.services__bottom-title {
+  font-family: "ABCMonumentGrotesk";
+}
+.services__bottom-text {
+  font-family: "ABCMonumentGrotesk";
+}
+@media (max-width: 1024px) {
+  .services {
+  }
+  .services__container {
+  }
+  .services__title {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .services__hr {
+  }
+  .services__main-box {
+  }
+  .services__mini-box {
+  }
+  .services__bottom-title {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .services__bottom-text {
+    font-family: "ABCMonumentGrotesk";
+  }
+}
+@media (max-width: 767px) {
+  .services {
+  }
+  .services__container {
+  }
+  .services__title {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .services__hr {
+  }
+  .services__main-box {
+  }
+  .services__mini-box {
+  }
+  .services__bottom-title {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .services__bottom-text {
+    font-family: "ABCMonumentGrotesk";
+  }
+}

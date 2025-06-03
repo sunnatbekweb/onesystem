@@ -1,0 +1,283 @@
+.fakeFooter {
+}
+.fakeFooter__container {
+}
+.fakeFooter__title {
+  font-family: "ABCMonumentGrotesk";
+}
+.fakeFooter__button {
+  cursor: pointer;
+  --c: #2f2f34;
+  color: #2f2f34;
+  font-size: 15px;
+  border: 2px solid var(--c);
+  border-radius: 60px;
+  padding: 21px 58px;
+  background-color: white;
+  font-weight: 700;
+  font-family: "ABCMonumentGrotesk";
+  text-align: center;
+  line-height: 20px;
+  font-size: 20px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.4s;
+  position: relative;
+}
+.fakeFooter__button span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: #2f2f34;
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.4s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+.fakeFooter__button:hover {
+  color: white;
+}
+.fakeFooter__button:hover span {
+  transform: translateY(0) scale(2);
+}
+
+.fakeFooter__button span:nth-child(1) {
+  --n: 1;
+}
+.fakeFooter__button span:nth-child(2) {
+  --n: 2;
+}
+.fakeFooter__button span:nth-child(3) {
+  --n: 3;
+}
+.fakeFooter__button span:nth-child(4) {
+  --n: 4;
+}
+.fakeFooter__button span:nth-child(5) {
+  --n: 5;
+}
+.fakeFooter__hr {
+}
+.fakeFooter__box-links {
+}
+.fakeFooter__main-box-links {
+}
+.fakeFooter__mini-boxes {
+}
+.fakeFooter__mini-boxes-texts {
+  font-family: "ABCMonumentGrotesk";
+}
+.fakeFooter__mini-boxes-email {
+  font-family: "ABCMonumentGrotesk";
+}
+.fakeFooter__mini-boxes-titles {
+  font-family: "ABCMonumentGrotesk";
+}
+.fakeFooter__copy-box {
+}
+.fakeFooter__copy-text {
+  font-family: "ABCMonumentGrotesk";
+}
+.fakeFooter__copy-logo-box {
+}
+.fakeFooter__developing-text {
+  font-family: "ABCMonumentGrotesk";
+}
+.fakeFooter__copy-logo-link {
+}
+.fakeFooter__copy-logo-text {
+  font-family: "ABCMonumentGrotesk";
+}
+@media (max-width: 1024px) {
+  .fakeFooter {
+  }
+  .fakeFooter__container {
+  }
+  .fakeFooter__title {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .fakeFooter__button {
+    cursor: pointer;
+    --c: #2f2f34;
+    color: #2f2f34;
+    font-size: 15px;
+    border: 2px solid var(--c);
+    border-radius: 60px;
+    padding: 21px 58px;
+    background-color: white;
+    font-weight: 700;
+    font-family: "ABCMonumentGrotesk";
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.4s;
+    position: relative;
+  }
+  .fakeFooter__button span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: #2f2f34;
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.4s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+  }
+  .fakeFooter__button:active {
+    color: white;
+  }
+  .fakeFooter__button:active span {
+    transform: translateY(0) scale(2);
+  }
+
+  .fakeFooter__button span:nth-child(1) {
+    --n: 1;
+  }
+  .fakeFooter__button span:nth-child(2) {
+    --n: 2;
+  }
+  .fakeFooter__button span:nth-child(3) {
+    --n: 3;
+  }
+  .fakeFooter__button span:nth-child(4) {
+    --n: 4;
+  }
+  .fakeFooter__button span:nth-child(5) {
+    --n: 5;
+  }
+  .fakeFooter__hr {
+  }
+  .fakeFooter__box-links {
+  }
+  .fakeFooter__main-box-links {
+  }
+  .fakeFooter__mini-boxes {
+  }
+  .fakeFooter__mini-boxes-texts {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .fakeFooter__mini-boxes-email {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .fakeFooter__mini-boxes-titles {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .fakeFooter__copy-box {
+  }
+  .fakeFooter__copy-text {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .fakeFooter__copy-logo-box {
+  }
+  .fakeFooter__developing-text {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .fakeFooter__copy-logo-link {
+  }
+  .fakeFooter__copy-logo-text {
+    font-family: "ABCMonumentGrotesk";
+  }
+}
+@media (max-width: 767px) {
+  .fakeFooter {
+  }
+  .fakeFooter__container {
+  }
+  .fakeFooter__title {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .fakeFooter__button {
+    cursor: pointer;
+    --c: #2f2f34;
+    color: #2f2f34;
+    font-size: 15px;
+    border: 2px solid var(--c);
+    border-radius: 60px;
+    padding: 21px 58px;
+    background-color: white;
+    font-weight: 700;
+    font-family: "ABCMonumentGrotesk";
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.4s;
+    position: relative;
+  }
+  .fakeFooter__button span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: #2f2f34;
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.4s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+  }
+  .fakeFooter__button:active {
+    color: white;
+  }
+  .fakeFooter__button:active span {
+    transform: translateY(0) scale(2);
+  }
+
+  .fakeFooter__button span:nth-child(1) {
+    --n: 1;
+  }
+  .fakeFooter__button span:nth-child(2) {
+    --n: 2;
+  }
+  .fakeFooter__button span:nth-child(3) {
+    --n: 3;
+  }
+  .fakeFooter__button span:nth-child(4) {
+    --n: 4;
+  }
+  .fakeFooter__button span:nth-child(5) {
+    --n: 5;
+  }
+  .fakeFooter__hr {
+  }
+  .fakeFooter__box-links {
+  }
+  .fakeFooter__main-box-links {
+  }
+  .fakeFooter__mini-boxes {
+  }
+  .fakeFooter__mini-boxes-texts {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .fakeFooter__mini-boxes-email {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .fakeFooter__mini-boxes-titles {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .fakeFooter__copy-box {
+  }
+  .fakeFooter__copy-text {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .fakeFooter__copy-logo-box {
+  }
+  .fakeFooter__developing-text {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .fakeFooter__copy-logo-link {
+  }
+  .fakeFooter__copy-logo-text {
+    font-family: "ABCMonumentGrotesk";
+  }
+}
