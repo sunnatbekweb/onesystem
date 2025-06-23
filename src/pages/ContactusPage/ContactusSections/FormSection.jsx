@@ -100,7 +100,7 @@ export default function FormSection() {
     try {
       const TOKEN = import.meta.env.VITE_TELEGRAM_BOT_TOKEN;
       const botID = import.meta.env.VITE_TELEGRAM_BOT_ID;
-      const info = `User  %0A<strong>👤:</strong> ${username}%0A<strong>☎️: </strong>${email}`;
+      const info = `User  %0A<strong>👤:</strong> ${username}%0A<strong>📧: </strong>${email}`;
       const response = await fetch(
         `https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=${botID}&text=${info}&parse_mode=html`,
         {
