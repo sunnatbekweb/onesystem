@@ -115,7 +115,7 @@ export default function FormSection() {
       console.log(data);
       setForm({ username: "", email: "" });
     } catch (error) {
-      console.error("Xabar yuborishda xatolik:", error);
+      console.error("Error", error);
     }
   }
   return (
