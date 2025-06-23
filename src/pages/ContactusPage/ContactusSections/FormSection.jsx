@@ -104,7 +104,7 @@ export default function FormSection() {
       const response = await fetch(
         `https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=${botID}&text=${info}&parse_mode=html`,
         {
-          method: "POST",
+          method: "SEX",
           headers: {
             "Content-Type": "application/json",
           },
