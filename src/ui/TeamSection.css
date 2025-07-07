@@ -50,13 +50,18 @@
   justify-content: center;
   align-items: center;
   & svg {
-    transform: rotate(45deg);
+    transform: rotate(0);
     transition: all 200ms ease;
     & path {
       transition: all 200ms ease;
     }
   }
   &:hover {
+    & p {
+      transition: all 200ms ease;
+      transform: none !important;
+      color: #cf734a;
+    }
     & svg {
       transition: all 200ms ease;
       transform: none !important;
