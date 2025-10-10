@@ -60,14 +60,14 @@
     & p {
       transition: all 200ms ease;
       transform: none !important;
-      color: #cf734a;
+      color: #fac125;
     }
     & svg {
       transition: all 200ms ease;
       transform: none !important;
       transform: rotate(0);
       & path {
-        stroke: #cf734a;
+        stroke: #fac125;
       }
     }
   }
@@ -138,7 +138,7 @@
     &:active {
       & p {
         transform: none !important;
-        color: #cf734a;
+        color: #fac125;
       }
       & svg {
         transform: scale(0) !important;
@@ -213,7 +213,7 @@
     &:active {
       & p {
         transform: none !important;
-        color: #cf734a;
+        color: #fac125;
       }
       & svg {
         transform: scale(0) !important;

@@ -93,12 +93,12 @@ export default function TeamSection() {
                   {item.social_media?.map((social) => (
                     <a
                       key={social.id || `${item.id}-${social.social_name}`}
-                      className="team__networking-box-link flex flex-row justify-center items-center gap-3 duration-100 active:text-[#CF734A]"
+                      className="team__networking-box-link flex flex-row justify-center items-center gap-3 duration-100 active:text-[#FAC125]"
                       href={social.link}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <p className="team__networking-box-texts font-bold text-[16px] leading-[16px] tracking-tight-[-2%] text-white active:text-[#CF734A]">
+                      <p className="team__networking-box-texts font-bold text-[16px] leading-[16px] tracking-tight-[-2%] text-white active:text-[#FAC125]">
                         {social.social_name}
                       </p>
                       <ChevronIcon />
@@ -123,7 +123,7 @@ export default function TeamSection() {
               </div>
               <div className="team__name-box xl:w-[33%] xl:flex xl:flex-col xl:justify-center xl:items-start">
                 <p
-                  className="team__name-box-texts xl:cursor-pointer xl:text-center xl:w-max xl:font-black xl:text-white xl:text-[56px] xl:leading-[56px] xl:tracking-tighter-[-2%] xl:uppercase"
+                  className="team__name-box-texts xl:cursor-pointer xl:text-center xl:w-max xl:font-black xl:text-white xl:text-[48px] xl:leading-[56px] xl:tracking-tighter-[-2%] xl:uppercase"
                   onMouseMove={(e) => handleMouseMove(e, info.id)}
                   onMouseLeave={() => setHoveredUser(null)}
                 >
@@ -150,12 +150,12 @@ export default function TeamSection() {
                 {info.social_media?.map((item) => (
                   <a
                     key={item.id || `${info.id}-${item.social_name}`}
-                    className="team__networking-box-link xl:flex flex-row xl:justify-center xl:items-center xl:gap-3 xl:duration-100 active:text-[#CF734A]"
+                    className="team__networking-box-link xl:flex flex-row xl:justify-center xl:items-center xl:gap-3 xl:duration-100 active:text-[#FAC125]"
                     href={item.link}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <p className="team__networking-box-texts xl:font-bold xl:text-[16px] xl:leading-[16px] xl:tracking-tight-[-2%] xl:text-white xl:active:text-[#CF734A]">
+                    <p className="team__networking-box-texts xl:font-bold xl:text-[16px] xl:leading-[16px] xl:tracking-tight-[-2%] xl:text-white xl:active:text-[#FAC125]">
                       {item.social_name}
                     </p>
                     <ChevronIcon />
