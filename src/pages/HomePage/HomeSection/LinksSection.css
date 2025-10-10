@@ -31,17 +31,17 @@
       transition: all 200ms ease;
       transform: rotate(0);
       & path {
-        stroke: #cf734a;
+        stroke: #fac125;
       }
     }
     & p {
-      color: #cf734a;
+      color: #fac125;
       transition: all 200ms ease;
     }
     & svg {
       transition: all 200ms ease;
       & path {
-        fill: #cf734a;
+        fill: #fac125;
       }
     }
   }
@@ -96,17 +96,17 @@
         transition: all 200ms ease;
         transform: rotate(0);
         & path {
-          stroke: #cf734a;
+          stroke: #fac125;
         }
       }
       & p {
-        color: #cf734a;
+        color: #fac125;
         transition: all 200ms ease;
       }
       & svg {
         transition: all 200ms ease;
         & path {
-          fill: #cf734a;
+          fill: #fac125;
         }
       }
     }
@@ -161,17 +161,17 @@
         transition: all 200ms ease;
         transform: rotate(0);
         & path {
-          stroke: #cf734a;
+          stroke: #fac125;
         }
       }
       & p {
-        color: #cf734a;
+        color: #fac125;
         transition: all 200ms ease;
       }
       & svg {
         transition: all 200ms ease;
         & path {
-          fill: #cf734a;
+          fill: #fac125;
         }
       }
     }
@@ -225,17 +225,17 @@
         transition: all 200ms ease;
         transform: rotate(0);
         & path {
-          stroke: #cf734a;
+          stroke: #fac125;
         }
       }
       & p {
-        color: #cf734a;
+        color: #fac125;
         transition: all 200ms ease;
       }
       & svg {
         transition: all 200ms ease;
         & path {
-          fill: #cf734a;
+          fill: #fac125;
         }
       }
     }
@@ -290,17 +290,17 @@
         transition: all 200ms ease;
         transform: rotate(0);
         & path {
-          stroke: #cf734a;
+          stroke: #fac125;
         }
       }
       & p {
-        color: #cf734a;
+        color: #fac125;
         transition: all 200ms ease;
       }
       & svg {
         transition: all 200ms ease;
         & path {
-          fill: #cf734a;
+          fill: #fac125;
         }
       }
     }
