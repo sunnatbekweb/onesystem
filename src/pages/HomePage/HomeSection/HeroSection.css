@@ -1,0 +1,201 @@
+.hero {
+  width: 100%;
+  background-image: url("../../../assets/images/hero__background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero__container {
+}
+.hero__hr {
+}
+.hero__title {
+  font-family: "ABCMonumentGrotesk";
+  word-break: break-word;
+  white-space: normal;
+}
+.hero__title-span {
+  font-family: "ABCMonumentGrotesk";
+}
+.hero__text {
+  font-family: "ABCMonumentGrotesk";
+}
+.hero__bottom {
+}
+.hero__swiper-box {
+}
+.hero__swiperSlide {
+}
+.hero__swiperSlide-card {
+}
+.hero__swiperSlide-icon {
+}
+.hero__swiperSlide-title {
+  font-family: "ABCMonumentGrotesk";
+  word-break: break-word;
+  white-space: normal;
+}
+.hero__swiperSlide-text {
+  font-family: "ABCMonumentGrotesk";
+}
+.swiper-button-prev:after {
+  z-index: 20;
+  content: "" !important;
+  background-image: url("../../../assets/icons/arrow__icon.svg");
+  background-repeat: no-repeat;
+  transform: rotate(0deg);
+  background-position: center;
+  background-size: cover;
+  margin-left: 82px;
+  min-width: 40px;
+  height: 40px;
+}
+.swiper-button-next:after {
+  z-index: 20;
+  content: "" !important;
+  background-image: url("../../../assets/icons/arrow__icon.svg");
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  background-position: center;
+  background-size: cover;
+  margin-right: 82px;
+  min-width: 40px;
+  height: 40px;
+}
+@media (max-width: 1024px) {
+  .hero {
+    width: 100%;
+    background-image: url("../../../assets/images/hero__background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .hero__container {
+  }
+  .hero__hr {
+  }
+  .hero__title {
+    font-family: "ABCMonumentGrotesk";
+    word-break: break-word;
+    white-space: normal;
+  }
+  .hero__title-span {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .hero__text {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .hero__bottom {
+  }
+  .hero__swiper-box {
+  }
+  .hero__swiperSlide {
+  }
+  .hero__swiperSlide-card {
+  }
+  .hero__swiperSlide-icon {
+  }
+  .hero__swiperSlide-title {
+    font-family: "ABCMonumentGrotesk";
+    word-break: break-word;
+    white-space: normal;
+  }
+  .hero__swiperSlide-text {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .swiper-button-prev:after {
+    z-index: 20;
+    content: "" !important;
+    background-image: url("../../../assets/icons/arrow__icon.svg");
+    background-repeat: no-repeat;
+    transform: rotate(0deg);
+    background-position: center;
+    margin-left: 32px;
+    min-width: 24px;
+    height: 24px;
+    position: relative;
+    top: -173px;
+  }
+  .swiper-button-next:after {
+    z-index: 20;
+    content: "" !important;
+    background-image: url("../../../assets/icons/arrow__icon.svg");
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    background-position: center;
+    margin-right: 32px;
+    min-width: 24px;
+    height: 24px;
+    position: relative;
+    top: -173px;
+  }
+}
+@media (max-width: 767px) {
+  .hero {
+    width: 100%;
+    background-image: url("../../../assets/images/hero__background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .hero__container {
+  }
+  .hero__hr {
+  }
+  .hero__title {
+    font-family: "ABCMonumentGrotesk";
+    word-break: break-word;
+    white-space: normal;
+  }
+  .hero__title-span {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .hero__text {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .hero__bottom {
+  }
+  .hero__swiper-box {
+  }
+  .hero__swiperSlide {
+  }
+  .hero__swiperSlide-card {
+  }
+  .hero__swiperSlide-icon {
+  }
+  .hero__swiperSlide-title {
+    width: 281px;
+    font-family: "ABCMonumentGrotesk";
+    word-break: break-word;
+    white-space: normal;
+  }
+  .hero__swiperSlide-text {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .swiper-button-prev:after {
+    z-index: 20;
+    content: "" !important;
+    background-image: url("../../../assets/icons/arrow__icon.svg");
+    background-repeat: no-repeat;
+    transform: rotate(0deg) !important;
+    background-position: center;
+    margin-left: 32px;
+    min-width: 24px;
+    height: 24px;
+    position: relative;
+    top: -173px;
+  }
+  .swiper-button-next:after {
+    z-index: 20;
+    content: "" !important;
+    background-image: url("../../../assets/icons/arrow__icon.svg");
+    background-repeat: no-repeat;
+    transform: rotate(180deg) !important;
+    background-position: center;
+    margin-right: 32px;
+    min-width: 24px;
+    height: 24px;
+    position: relative;
+    top: -173px;
+  }
+}

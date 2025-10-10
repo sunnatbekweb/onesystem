@@ -1,0 +1,46 @@
+.roar {
+}
+.roar__image {
+}
+.roar__title {
+  font-family: "ABCMonumentGrotesk";
+  transition: all 0.5s ease-in-out;
+}
+.roar__bottom-box {
+}
+.roar__box-image {
+}
+.roar__images {
+}
+@media (max-width: 1024px) {
+  .roar {
+  }
+  .roar__image {
+  }
+  .roar__title {
+    font-family: "ABCMonumentGrotesk";
+    transition: all 0.5s ease-in-out;
+  }
+  .roar__bottom-box {
+  }
+  .roar__box-image {
+  }
+  .roar__images {
+  }
+}
+@media (max-width: 767px) {
+  .roar {
+  }
+  .roar__image {
+  }
+  .roar__title {
+    font-family: "ABCMonumentGrotesk";
+    transition: all 0.5s ease-in-out;
+  }
+  .roar__bottom-box {
+  }
+  .roar__box-image {
+  }
+  .roar__images {
+  }
+}

@@ -1,0 +1,49 @@
+.active {
+  color: #2f2f34;
+  opacity: 1;
+}
+.headerNavbar__nav {
+}
+.headerNavbar__list {
+}
+.headerNavbar__lists {
+}
+.headerNavbar__links {
+}
+.headerNavbar__links-text {
+  font-family: "ABCMonumentGrotesk" !important;
+}
+@media (max-width: 1024px) {
+  .active {
+    color: #2f2f34;
+    opacity: 1;
+  }
+  .headerNavbar__nav {
+  }
+  .headerNavbar__list {
+  }
+  .headerNavbar__lists {
+  }
+  .headerNavbar__links {
+  }
+  .headerNavbar__links-text {
+    font-family: "ABCMonumentGrotesk" !important;
+  }
+}
+@media (max-width: 767px) {
+  .active {
+    color: #2f2f34;
+    opacity: 1;
+  }
+  .headerNavbar__nav {
+  }
+  .headerNavbar__list {
+  }
+  .headerNavbar__lists {
+  }
+  .headerNavbar__links {
+  }
+  .headerNavbar__links-text {
+    font-family: "ABCMonumentGrotesk" !important;
+  }
+}

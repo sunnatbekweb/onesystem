@@ -1,0 +1,61 @@
+.strategy {
+}
+.strategy__container {
+}
+.strategy__hr {
+}
+.strategy__title {
+  font-family: "ABCMonumentGrotesk";
+}
+.strategy__title-span {
+  font-family: "ABCMonumentGrotesk";
+}
+.strategy__bottom-box {
+}
+.strategy__bottom-mini-boxes {
+}
+.strategy__bottom-mini-boxes-texts {
+  font-family: "ABCMonumentGrotesk";
+}
+@media (max-width: 1024px) {
+  .strategy {
+  }
+  .strategy__container {
+  }
+  .strategy__hr {
+  }
+  .strategy__title {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .strategy__title-span {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .strategy__bottom-box {
+  }
+  .strategy__bottom-mini-boxes {
+  }
+  .strategy__bottom-mini-boxes-texts {
+    font-family: "ABCMonumentGrotesk";
+  }
+}
+@media (max-width: 767px) {
+  .strategy {
+  }
+  .strategy__container {
+  }
+  .strategy__hr {
+  }
+  .strategy__title {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .strategy__title-span {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .strategy__bottom-box {
+  }
+  .strategy__bottom-mini-boxes {
+  }
+  .strategy__bottom-mini-boxes-texts {
+    font-family: "ABCMonumentGrotesk";
+  }
+}

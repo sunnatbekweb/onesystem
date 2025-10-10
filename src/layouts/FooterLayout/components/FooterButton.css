@@ -1,0 +1,172 @@
+.footerButton {
+}
+.footerButton__button {
+  cursor: pointer;
+  --c: #2f2f34;
+  color: #2f2f34;
+  font-size: 15px;
+  border: 2px solid var(--c);
+  border-radius: 60px;
+  padding: 21px 58px;
+  background-color: white;
+  font-weight: 700;
+  font-family: "ABCMonumentGrotesk";
+  text-align: center;
+  line-height: 20px;
+  font-size: 20px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.4s;
+  position: relative;
+}
+.footerButton__button span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: #2f2f34;
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.4s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+.footerButton__button:hover {
+  color: white;
+}
+.footerButton__button:hover span {
+  transform: translateY(0) scale(2);
+}
+
+.footerButton__button span:nth-child(1) {
+  --n: 1;
+}
+.footerButton__button span:nth-child(2) {
+  --n: 2;
+}
+.footerButton__button span:nth-child(3) {
+  --n: 3;
+}
+.footerButton__button span:nth-child(4) {
+  --n: 4;
+}
+.footerButton__button span:nth-child(5) {
+  --n: 5;
+}
+@media (max-width: 1024px) {
+  .footerButton {
+  }
+  .footerButton__button {
+    cursor: pointer;
+    --c: #2f2f34;
+    color: #2f2f34;
+    font-size: 15px;
+    border: 2px solid var(--c);
+    border-radius: 60px;
+    padding: 21px 58px;
+    background-color: white;
+    font-weight: 700;
+    font-family: "ABCMonumentGrotesk";
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.4s;
+    position: relative;
+  }
+  .footerButton__button span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: #2f2f34;
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.4s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+  }
+  .footerButton__button:active {
+    color: white;
+  }
+  .footerButton__button:active span {
+    transform: translateY(0) scale(2);
+  }
+
+  .footerButton__button span:nth-child(1) {
+    --n: 1;
+  }
+  .footerButton__button span:nth-child(2) {
+    --n: 2;
+  }
+  .footerButton__button span:nth-child(3) {
+    --n: 3;
+  }
+  .footerButton__button span:nth-child(4) {
+    --n: 4;
+  }
+  .footerButton__button span:nth-child(5) {
+    --n: 5;
+  }
+}
+@media (max-width: 767px) {
+  .footerButton {
+  }
+  .footerButton__button {
+    cursor: pointer;
+    --c: #2f2f34;
+    color: #2f2f34;
+    font-size: 15px;
+    border: 2px solid var(--c);
+    border-radius: 60px;
+    padding: 21px 58px;
+    background-color: white;
+    font-weight: 700;
+    font-family: "ABCMonumentGrotesk";
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.4s;
+    position: relative;
+  }
+  .footerButton__button span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: #2f2f34;
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.4s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+  }
+  .footerButton__button:active {
+    color: white;
+  }
+  .footerButton__button:active span {
+    transform: translateY(0) scale(2);
+  }
+
+  .footerButton__button span:nth-child(1) {
+    --n: 1;
+  }
+  .footerButton__button span:nth-child(2) {
+    --n: 2;
+  }
+  .footerButton__button span:nth-child(3) {
+    --n: 3;
+  }
+  .footerButton__button span:nth-child(4) {
+    --n: 4;
+  }
+  .footerButton__button span:nth-child(5) {
+    --n: 5;
+  }
+}

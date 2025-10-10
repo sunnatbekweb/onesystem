@@ -1,0 +1,323 @@
+.links {
+}
+.links__container {
+  width: 100% !important;
+}
+.links__title {
+  font-family: "ABCMonumentGrotesk";
+}
+.links__hr {
+}
+.links__bottom-box {
+  width: 100% !important;
+}
+.links__bottom-mini-boxes {
+  width: 100% !important;
+  cursor: pointer;
+  & .chevron {
+    transform: rotate(45deg);
+  }
+  & svg {
+    transition: all 200ms ease;
+    & path {
+      transition: all 200ms ease;
+    }
+  }
+  & p {
+    color: white;
+  }
+  &:hover {
+    & .chevron {
+      transition: all 200ms ease;
+      transform: rotate(0);
+      & path {
+        stroke: #cf734a;
+      }
+    }
+    & p {
+      color: #cf734a;
+      transition: all 200ms ease;
+    }
+    & svg {
+      transition: all 200ms ease;
+      & path {
+        fill: #cf734a;
+      }
+    }
+  }
+  &:last-child {
+    border-bottom: none;
+  }
+}
+.links__icons {
+  width: auto !important;
+  display: block;
+}
+.links__bottom-texts {
+  transform: translateX(300px);
+  width: auto !important;
+}
+.links__icons-second {
+  transform: translateX(400px);
+  width: auto !important;
+  display: block;
+}
+@media (max-width: 1200px) {
+  .links {
+  }
+  .links__container {
+    width: 100% !important;
+  }
+  .links__title {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .links__hr {
+  }
+  .links__bottom-box {
+    width: 100% !important;
+  }
+  .links__bottom-mini-boxes {
+    width: 100% !important;
+    cursor: pointer;
+    & .chevron {
+      transform: rotate(45deg);
+    }
+    & svg {
+      transition: all 200ms ease;
+      & path {
+        transition: all 200ms ease;
+      }
+    }
+    & p {
+      color: white;
+    }
+    &:hover {
+      & .chevron {
+        transition: all 200ms ease;
+        transform: rotate(0);
+        & path {
+          stroke: #cf734a;
+        }
+      }
+      & p {
+        color: #cf734a;
+        transition: all 200ms ease;
+      }
+      & svg {
+        transition: all 200ms ease;
+        & path {
+          fill: #cf734a;
+        }
+      }
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  .links__icons {
+    width: auto !important;
+  }
+  .links__bottom-texts {
+    transform: translateX(0px);
+    width: auto !important;
+    font-family: "ABCMonumentGrotesk";
+  }
+  .links__icons-second {
+    transform: translateX(50px);
+    width: auto !important;
+  }
+}
+@media (max-width: 1024px) {
+  .links {
+  }
+  .links__container {
+    width: 100% !important;
+  }
+  .links__title {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .links__hr {
+  }
+  .links__bottom-box {
+    width: 100% !important;
+  }
+  .links__bottom-mini-boxes {
+    width: 100% !important;
+    cursor: pointer;
+    & .chevron {
+      transform: rotate(45deg);
+    }
+    & svg {
+      transition: all 200ms ease;
+      & path {
+        transition: all 200ms ease;
+      }
+    }
+    & p {
+      color: white;
+    }
+    &:hover {
+      & .chevron {
+        transition: all 200ms ease;
+        transform: rotate(0);
+        & path {
+          stroke: #cf734a;
+        }
+      }
+      & p {
+        color: #cf734a;
+        transition: all 200ms ease;
+      }
+      & svg {
+        transition: all 200ms ease;
+        & path {
+          fill: #cf734a;
+        }
+      }
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  .links__icons {
+    width: auto !important;
+  }
+  .links__bottom-texts {
+    transform: translateX(0px);
+    width: auto !important;
+    font-family: "ABCMonumentGrotesk";
+  }
+  .links__icons-second {
+    width: auto !important;
+  }
+}
+@media (max-width: 840px) {
+  .links {
+  }
+  .links__container {
+    width: 100% !important;
+  }
+  .links__title {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .links__hr {
+  }
+  .links__bottom-box {
+    width: 100% !important;
+  }
+  .links__bottom-mini-boxes {
+    width: 100% !important;
+    cursor: pointer;
+    & .chevron {
+      transform: rotate(45deg);
+    }
+    & svg {
+      transition: all 200ms ease;
+      & path {
+        transition: all 200ms ease;
+      }
+    }
+    & p {
+      color: white;
+    }
+    &:hover {
+      & .chevron {
+        transition: all 200ms ease;
+        transform: rotate(0);
+        & path {
+          stroke: #cf734a;
+        }
+      }
+      & p {
+        color: #cf734a;
+        transition: all 200ms ease;
+      }
+      & svg {
+        transition: all 200ms ease;
+        & path {
+          fill: #cf734a;
+        }
+      }
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  .links__icons {
+    width: auto !important;
+  }
+  .links__bottom-texts {
+    transform: translateX(0px);
+    width: auto !important;
+    font-family: "ABCMonumentGrotesk";
+  }
+  .links__icons-second {
+    transform: translateX(0px);
+    width: auto !important;
+  }
+}
+@media (max-width: 767px) {
+  .links {
+  }
+  .links__container {
+    width: 100% !important;
+  }
+  .links__title {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .links__hr {
+  }
+  .links__bottom-box {
+    width: 100% !important;
+  }
+  .links__bottom-mini-boxes {
+    width: 100% !important;
+    cursor: pointer;
+    & .chevron {
+      transform: rotate(45deg);
+    }
+    & svg {
+      transition: all 200ms ease;
+      & path {
+        transition: all 200ms ease;
+      }
+    }
+    & p {
+      color: white;
+    }
+    &:hover {
+      & .chevron {
+        transition: all 200ms ease;
+        transform: rotate(0);
+        & path {
+          stroke: #cf734a;
+        }
+      }
+      & p {
+        color: #cf734a;
+        transition: all 200ms ease;
+      }
+      & svg {
+        transition: all 200ms ease;
+        & path {
+          fill: #cf734a;
+        }
+      }
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  .links__icons {
+    width: auto !important;
+  }
+  .links__bottom-texts {
+    transform: translateX(0px);
+    width: auto !important;
+    font-family: "ABCMonumentGrotesk";
+  }
+  .links__icons-second {
+    display: none;
+    width: auto !important;
+  }
+}

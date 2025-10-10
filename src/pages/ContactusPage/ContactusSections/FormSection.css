@@ -1,0 +1,133 @@
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #eaeaea inset !important;
+  background-color: #eaeaea !important;
+  -webkit-text-fill-color: #2f2f34 !important;
+  caret-color: #2f2f34 !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+}
+input:-webkit-autofill:focus,
+input:-webkit-autofill:not(:placeholder-shown) {
+  -webkit-box-shadow: 0 0 0px 1000px #eaeaea inset !important;
+  background-color: #eaeaea !important;
+  -webkit-text-fill-color: #2f2f34 !important;
+  caret-color: #2f2f34 !important;
+}
+input {
+  caret-color: #8d8d8f !important;
+}
+#text::placeholder,
+#email::placeholder {
+  color: #8d8d8f !important;
+}
+.formSection {
+}
+.formSection__container {
+}
+.formSection__form {
+}
+.formSection__form-input-boxes {
+}
+.formSection__form-label {
+  font-family: "ABCMonumentGrotesk";
+}
+.formSection__form-hr {
+}
+.formSection__form-inputs {
+  font-family: "ABCMonumentGrotesk";
+}
+.formSection__form-button {
+  font-family: "ABCMonumentGrotesk";
+}
+.formSection__form-button-text {
+  font-family: "ABCMonumentGrotesk";
+}
+@media (max-width: 1024px) {
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #eaeaea inset !important;
+    background-color: #eaeaea !important;
+    -webkit-text-fill-color: #2f2f34 !important;
+    caret-color: #2f2f34 !important;
+    transition: background-color 5000s ease-in-out 0s !important;
+  }
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:not(:placeholder-shown) {
+    -webkit-box-shadow: 0 0 0px 1000px #eaeaea inset !important;
+    background-color: #eaeaea !important;
+    -webkit-text-fill-color: #2f2f34 !important;
+    caret-color: #2f2f34 !important;
+  }
+  input {
+    caret-color: #8d8d8f !important;
+  }
+  #text::placeholder,
+  #email::placeholder {
+    color: #8d8d8f !important;
+  }
+  .formSection {
+  }
+  .formSection__container {
+  }
+  .formSection__form {
+  }
+  .formSection__form-input-boxes {
+  }
+  .formSection__form-label {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .formSection__form-hr {
+  }
+  .formSection__form-inputs {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .formSection__form-button {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .formSection__form-button-text {
+    font-family: "ABCMonumentGrotesk";
+  }
+}
+@media (max-width: 767px) {
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #eaeaea inset !important;
+    background-color: #eaeaea !important;
+    -webkit-text-fill-color: #2f2f34 !important;
+    caret-color: #2f2f34 !important;
+    transition: background-color 5000s ease-in-out 0s !important;
+  }
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:not(:placeholder-shown) {
+    -webkit-box-shadow: 0 0 0px 1000px #eaeaea inset !important;
+    background-color: #eaeaea !important;
+    -webkit-text-fill-color: #2f2f34 !important;
+    caret-color: #2f2f34 !important;
+  }
+  input {
+    caret-color: #8d8d8f !important;
+  }
+  #text::placeholder,
+  #email::placeholder {
+    color: #8d8d8f !important;
+  }
+  .formSection {
+  }
+  .formSection__container {
+  }
+  .formSection__form {
+  }
+  .formSection__form-input-boxes {
+  }
+  .formSection__form-label {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .formSection__form-hr {
+  }
+  .formSection__form-inputs {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .formSection__form-button {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .formSection__form-button-text {
+    font-family: "ABCMonumentGrotesk";
+  }
+}

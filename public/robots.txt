@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /test/
+Sitemap: https://roar.com/sitemap.xml

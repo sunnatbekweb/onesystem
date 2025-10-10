@@ -1,0 +1,125 @@
+.app__container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.app__scrollUp-button {
+  z-index: 100 !important;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2f2f34;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  position: fixed;
+  right: 1rem;
+  bottom: 15% !important;
+  background-color: #cf734a;
+  padding: 0 0.3rem;
+  border-radius: 50%;
+  border: 3px solid #2f2f34;
+  transform: scale(0);
+  transition: 0.4s;
+}
+.app__scrollUp-button:active {
+  opacity: 0.5;
+}
+.app__scrollUp-button-icon {
+  font-size: 15px;
+}
+.scrollUp__show-button {
+  bottom: 5rem;
+  transform: scale(1);
+}
+.app__loader {
+  overflow: hidden !important;
+}
+.app__loader-image {
+}
+@media (max-width: 1024px) {
+  .app__container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .app__scrollUp-button {
+    z-index: 100 !important;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2f2f34;
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    position: fixed;
+    right: 1rem;
+    bottom: 15% !important;
+    background-color: #cf734a;
+    padding: 0 0.3rem;
+    border-radius: 50%;
+    border: 3px solid #2f2f34;
+    transform: scale(0);
+    transition: 0.4s;
+  }
+  .app__scrollUp-button:active {
+    opacity: 0.5;
+  }
+  .app__scrollUp-button-icon {
+    font-size: 20px;
+  }
+  .scrollUp__show-button {
+    bottom: 5rem;
+    transform: scale(1);
+  }
+  .app__loader {
+  }
+  .app__loader-image {
+  }
+}
+@media (max-width: 767px) {
+  .app__container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .app__scrollUp-button {
+    z-index: 100 !important;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2f2f34;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    position: fixed;
+    right: 1rem;
+    bottom: 15% !important;
+    background-color: #cf734a;
+    padding: 0 0.3rem;
+    border-radius: 50%;
+    border: 3px solid #2f2f34;
+    transform: scale(0);
+    transition: 0.4s;
+  }
+  .app__scrollUp-button:active {
+    opacity: 0.5;
+  }
+  .app__scrollUp-button-icon {
+    font-size: 16px;
+  }
+  .scrollUp__show-button {
+    bottom: 5rem;
+    transform: scale(1);
+  }
+  .app__loader {
+  }
+  .app__loader-image {
+  }
+}

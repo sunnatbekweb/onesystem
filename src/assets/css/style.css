@@ -1,0 +1,91 @@
+:root {
+  --copper__red: #cf734a;
+  --white: #ffffff;
+  --black: #000000;
+  --charcoal__gray: #2f2f34;
+  --taupe__gray: #8d8d8f;
+  --light__gray: #eaeaea;
+}
+::-webkit-scrollbar {
+  width: 0.45rem;
+}
+::-webkit-scrollbar-track {
+  background: linear-gradient(
+    146deg,
+    rgb(255, 255, 255),
+    rgb(176, 171, 171),
+    rgb(129, 127, 127)
+  );
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--copper__red);
+}
+::selection {
+  background-color: var(--copper__red);
+  color: var(--white);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  display: inline-block;
+}
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  font-family: "ABCMonumentGrotesk";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  height: 100%;
+  line-height: 1.5;
+  background-color: var(--light__gray);
+  color: var(--charcoal__gray);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.container {
+  overflow: visible;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1366px;
+}
+@media (max-width: 1365px) {
+  .container {
+    width: 100% !important;
+    margin: 0 auto;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
