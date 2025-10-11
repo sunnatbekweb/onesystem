@@ -22,6 +22,8 @@ export default function HeroSection() {
       .then((response) => setBackendData(response.data))
       .catch((error) => console.log(error));
   }, []);
+
+  console.log(backendData)
   return (
     <div>
       <section className="hero pt-[277px]">
@@ -60,7 +62,7 @@ export default function HeroSection() {
             spaceBetween={14}
             centeredSlides={true}
           >
-            {backendData.map((item) => (
+            {backendData?.map((item) => (
               <SwiperSlide
                 className="hero__swiperSlide flex flex-col justify-center items-center"
                 key={item?.id}
