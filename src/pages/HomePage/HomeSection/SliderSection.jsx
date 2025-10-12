@@ -3,6 +3,7 @@ import "./SliderSection.css";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import axios from "axios";
+import { Link } from "react-router-dom";
 gsap.registerPlugin(ScrollTrigger);
 export default function SliderSection() {
   const [backendData, setBackendData] = useState([]);
@@ -54,22 +55,24 @@ export default function SliderSection() {
             <h3 className="slider__main-title w-[227px] text-center font-black text-[32px] xl:text-[56px] xl:leading-[56px] xl:w-[478px] uppercase">
               {backendData[currentIndex]?.explore_name?.name}
             </h3>
-            <div className="slider__mini-box flex flex-col justify-center items-center md:flex-row md:gap-[31px] xl:translate-x-[100px]">
-              <img
-                ref={(el) => (imageRefs.current[currentIndex] = el)}
-                className="slider__mini-box-image w-[277px] h-[353px] object-cover rounded-[139px] transition-all duration-500 xl:w-[337px] xl:h-[453px] xl:rounded-[239px]"
-                src={backendData[currentIndex]?.image}
-                alt="slide"
-              />
-              <p className="slider__mini-box-text hidden md:block md:w-[152px] font-bold text-[20px] leading-[20px] text-[#2F2F34]">
-                {backendData[currentIndex]?.text}
-              </p>
-            </div>
+            <Link to={backendData[currentIndex]?.url}>
+              <div className="slider__mini-box flex flex-col justify-center items-center md:flex-row md:gap-[31px] xl:translate-x-[100px]">
+                <img
+                  ref={(el) => (imageRefs.current[currentIndex] = el)}
+                  className="slider__mini-box-image w-[277px] h-[353px] object-cover rounded-[139px] transition-all duration-500 xl:w-[337px] xl:h-[453px] xl:rounded-[239px]"
+                  src={backendData[currentIndex]?.image}
+                  alt="slide"
+                />
+                <p className="slider__mini-box-text hidden md:block md:w-[152px] font-bold text-[20px] leading-[20px] text-[#2F2F34]">
+                  {backendData[currentIndex]?.text}
+                </p>
+              </div>
+            </Link>
           </div>
         )}
         <div className="slider__thumb-images mt-6 flex justify-center gap-4 flex-wrap">
           {backendData.map((item, index) => (
-            <a href={item.url} target="_blank" rel="noopener noreferrer">
+            <div>
               <img
                 key={item?.id}
                 src={item?.image}
@@ -81,7 +84,7 @@ export default function SliderSection() {
                     : "border-transparent opacity-50 hover:opacity-100"
                 }`}
               />
-            </a>
+            </div>
           ))}
         </div>
       </div>
