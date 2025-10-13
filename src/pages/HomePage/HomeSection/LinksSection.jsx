@@ -9,7 +9,7 @@ export default function LinksSection() {
       icon: <InstagramIcon />,
       texts: "Join to our instagram for watching our videos",
       secondIcon: <ChevronIcon />,
-      link: "https://github.com/VueMid/Roar",
+      link: "https://www.instagram.com/onesystem.uz?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     },
     {
       icon: <TelegramIcon />,
@@ -38,10 +38,12 @@ export default function LinksSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {item.icon}
+                 <div>
+                   {item.icon}
+                 </div>
                 </a>
                 <a href={item.link} target="_blank" rel="noopener noreferrer">
-                  <p className="links__bottom-texts font-black text-[20px] leading-[20px] tracking-tighter-[-2%] uppercase">
+                  <p className="links__bottom-texts font-black text-base md:text-xl tracking-tighter-[-2%] uppercase">
                     {item.texts}
                   </p>
                 </a>

@@ -42,7 +42,7 @@ export default function TeamSection() {
   }, [cursorPos]);
   return (
     <div>
-      <section className="team bg-[#2F2F34] pt-[48px] md:pt-[100px] overflow-x-hidden">
+      <section className="team bg-[#2F2F34] pt-[48px] md:pt-[100px] pb-12 lg:pb-0 overflow-x-hidden">
         <div className="container team__container w-full flex flex-col justify-center items-start px-[16px] md:px-[36px] lg:px-[48px]">
           <h4 className="team__title font-black text-[24px] leading-[20px] mb-[44px] tracking-tighter-[-2%] text-white uppercase xl:mb-[24px] xl:opacity-50">
             Our team
@@ -73,11 +73,11 @@ export default function TeamSection() {
               </div>
               <div className="team__name-box w-full flex flex-row justify-between items-start">
                 <p className="team__name-box-text hidden">Name</p>
-                <p className="team__name-box-texts font-black text-[56px] leading-[56px] tracking-tighter-[-2%] text-white w-[289px] uppercase md:w-full">
+                <p className="team__name-box-texts font-black text-4xl tracking-tighter-[-2%] text-white w-[289px] uppercase md:w-full">
                   {item.name}
                 </p>
                 <img
-                  className="team__name-user-image object-top w-[46px] h-[46px] rounded-[50%] md:w-[66px] md:h-[66px]"
+                  className="team__name-user-image object-cover w-[46px] h-[46px] rounded-[50%] md:w-[66px] md:h-[66px]"
                   src={item.image}
                   alt="user__image"
                 />

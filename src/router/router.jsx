@@ -24,7 +24,7 @@ const Router = () => {
                     <Route path="/" element={<HomePage />} />
                     <Route path="/aboutus" element={<AboutusPage />} />
                     <Route path="/development" element={<DevelopmentPage />} />
-                    <Route path="/marketing" element={<MarketingPage />} />
+                    <Route path="/projects" element={<MarketingPage />} />
                     <Route path="/contactus" element={<ContactusPage />} />
                 </Route>
                 <Route path="*" element={<NotFoundSection />} />

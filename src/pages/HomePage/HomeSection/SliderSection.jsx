@@ -42,7 +42,7 @@ export default function SliderSection() {
   return (
     <section
       ref={sliderRef}
-      className="slider pb-[120px] xl:pt-[226px] xl:pb-[227px] overflow-x-hidden hidden xl:block"
+      className="slider pb-[120px] xl:pt-[226px] xl:pb-[227px] overflow-x-hidden hidden xl:block overflow-y-hidden"
     >
       <div className="container slider__container flex flex-col justify-center items-center gap-6 px-[16px] md:px-[36px] md:gap-[121px] lg:px-[48px] xl:gap-[71px]">
         <div className="slider__top-box pt-[340px] flex flex-col justify-center items-center xl:pt-[0px]">
