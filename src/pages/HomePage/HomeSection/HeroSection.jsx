@@ -30,7 +30,7 @@ export default function HeroSection() {
         <div className="container hero__container flex flex-col justify-start items-start gap-[30px] px-[16px] md:px-[36px] lg:px-[48px] xl:flex xl:flex-col xl:justify-center xl:items-center xl:gap-[80px]">
           <hr className="hero__hr hidden w-full h-[2px] bg-[#2F2F34] opacity-10 border-none outline-none lg:block lg:translate-y-[-155px]" />
           <h2
-            className="hero__title w-full font-black text-[56px] leading-[48px] tracking-tighter-[-2%] text-[#2F2F34] uppercase lg:text-center xl:text-[120px] xl:leading-[100px]"
+            className="hero__title w-full font-black text-4xl tracking-tighter-[-2%] text-[#2F2F34] uppercase lg:text-center xl:text-[120px] xl:leading-[100px]"
             data-aos="flip-left"
           >
             Biz raqamli{" "}
@@ -39,7 +39,7 @@ export default function HeroSection() {
             </span>
           </h2>
           <p
-            className="hero__text w-[164px] font-black text-[20px] leading-[20px] tracking-tighter-[-2%] text-[#2F2F34] uppercase lg:w-full lg:text-center"
+            className="hero__text w-[164px] font-black text-base tracking-tighter-[-2%] text-[#2F2F34] uppercase lg:w-full lg:text-center"
             data-aos="flip-left"
           >
             Har qanday murakkablikda
@@ -83,11 +83,11 @@ export default function HeroSection() {
                       src={item?.icon}
                       alt="icon"
                     />
-                    <h2 className="hero__swiperSlide-title font-black text-center text-[56px] leading-[48px] tracking-tighter-[-2%] uppercase text-white mb-[19px] xl:text-[120px] xl:leading-[100px0] xl:tracking-tighter-[-2%] xl:mb-[34px]">
+                    <h2 className="hero__swiperSlide-title font-black text-center text-4xl tracking-tighter-[-2%] uppercase text-white mb-[19px] xl:text-[120px] xl:leading-[100px0] xl:tracking-tighter-[-2%] xl:mb-[34px]">
                       {item?.title}
                     </h2>
                   </div>
-                  <p className="hero__swiperSlide-text font-black text-center text-[20px] leading-[20px] tracking-tighter-[-2%] uppercase text-[#EAEAEA]">
+                  <p className="hero__swiperSlide-text font-black text-center text-base tracking-tighter-[-2%] uppercase text-[#EAEAEA]">
                     {item?.sub_title}
                   </p>
                 </div>

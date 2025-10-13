@@ -13,9 +13,9 @@ export default function FormSection() {
       once: false,
     });
   }, []);
-  const [form, setForm] = useState({ username: "", email: "" });
-  const [correct, setCorrect] = useState({ username: "", email: "" });
-  const [error, setError] = useState({ username: false, email: false });
+  const [form, setForm] = useState({ username: "", phone_number: "" });
+  const [correct, setCorrect] = useState({ username: "", phone_number: "" });
+  const [error, setError] = useState({ username: false, phone_number: false });
   const [isFormValid, setIsFormValid] = useState(false);
   useEffect(() => {
     if (form.username.length === null) {
@@ -45,28 +45,28 @@ export default function FormSection() {
     }
   }, [form.username]);
   useEffect(() => {
-    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    if (form.email.length === null) {
-      setError({ ...error, email: "*Please enter your email." });
-      setCorrect({ ...correct, email: false });
-    } else if (!emailRegex.test(form.email)) {
-      setError({ ...error, email: "*Please enter a valid email address." });
-      setCorrect({ ...correct, email: false });
+    const phoneRegexp = /^\+998\d{9}$/;
+    if (form.phone_number.length === null) {
+      setError({ ...error, phone_number: "*Please enter your phone number." });
+      setCorrect({ ...correct, phone_number: false });
+    } else if (!phoneRegexp.test(form.phone_number)) {
+      setError({ ...error, phone_number: "*Please enter a valid phone number." });
+      setCorrect({ ...correct, phone_number: false });
     } else {
       setCorrect({
         ...correct,
-        email: "This field has been filled correctly!",
+        phone_number: "This field has been filled correctly!",
       });
-      setError({ ...error, email: false });
+      setError({ ...error, phone_number: false });
     }
-  }, [form.email]);
+  }, [form.phone_number]);
   useEffect(() => {
-    setIsFormValid(correct.username && correct.email);
+    setIsFormValid(correct.username && correct.phone_number);
   }, [correct]);
   const formSubmission = async (e) => {
     e.preventDefault();
     if (isFormValid) {
-      await sendData(form.username, form.email);
+      await sendData(form.username, form.phone_number);
       await axios
         .post(`${import.meta.env.VITE_BASE_URL}/contact/`, form)
         .then((response) => console.log(response.data))
@@ -96,11 +96,11 @@ export default function FormSection() {
       });
     }
   };
-  async function sendData(username, email) {
+  async function sendData(username, phone_number) {
     try {
       const TOKEN = import.meta.env.VITE_TELEGRAM_BOT_TOKEN;
       const botID = import.meta.env.VITE_TELEGRAM_BOT_ID;
-      const info = `User  %0A<strong>👤:</strong> ${username}%0A<strong>📧: </strong>${email}`;
+      const info = `User  %0A<strong>👤:</strong> ${username}%0A<strong>📧: </strong>${phone_number}`;
       const response = await fetch(
         `https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=${botID}&text=${info}&parse_mode=html`,
         {
@@ -108,12 +108,12 @@ export default function FormSection() {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ username, email }),
+          body: JSON.stringify({ username, phone_number }),
         }
       );
       const data = await response.json();
       console.log(data);
-      setForm({ username: "", email: "" });
+      setForm({ username: "", phone_number: "" });
     } catch (error) {
       console.error("Error", error);
     }
@@ -178,29 +178,29 @@ export default function FormSection() {
             >
               <label
                 className="formSection__form-label font-bold text-[16px] leading-[16px] text-[#2F2F34] w-full"
-                htmlFor="email"
+                htmlFor="phone_number"
               >
-                Your email
+                Your phone number
               </label>
               <hr className="formSection__form-hr border-none outline-none w-full h-[2px] bg-[#D7D7D8]" />
               <input
                 className="formSection__form-inputs bg-[#EAEAEA] w-full font-black text-[32px] leading-[28px] tracking-tighter-[-2%] text-[#2F2F34] uppercase outline-none border-none"
                 onChange={(e) => {
                   e.preventDefault();
-                  setForm({ ...form, email: e.target.value.trim() });
+                  setForm({ ...form, phone_number: e.target.value.trim() });
                 }}
-                type="email"
-                id="email"
-                placeholder="Enter Your email"
+                type="tel"
+                id="phone_number"
+                placeholder="Enter Your phone number"
                 autoComplete="on"
-                value={form.email}
+                value={form.phone_number}
                 required
               />
-              {error.email && form.email.length > 0 ? (
-                <p className="text-[#CF734A]">{error.email}</p>
+              {error.phone_number && form.phone_number.length > 0 ? (
+                <p className="text-[#CF734A]">{error.phone_number}</p>
               ) : null}
-              {correct.email && form.email.length > 0 ? (
-                <p className="text-green-800">{correct.email}</p>
+              {correct.phone_number && form.phone_number.length > 0 ? (
+                <p className="text-green-800">{correct.phone_number}</p>
               ) : null}
             </div>
             <div
@@ -210,7 +210,7 @@ export default function FormSection() {
               <hr className="formSection__form-hr border-none outline-none w-full h-[2px] bg-[#D7D7D8]" />
               <button
                 className={`formSection__form-button w-full flex flex-row justify-between items-start ${
-                  form.username.length && form.email.length > 0
+                  form.username.length && form.phone_number.length > 0
                     ? "text-[#2F2F34]"
                     : "text-[#8d8d8f]"
                 }`}
@@ -221,7 +221,7 @@ export default function FormSection() {
                 </p>
                 <RightChevron
                   fill={
-                    form.username.length && form.email.length > 0
+                    form.username.length && form.phone_number.length > 0
                       ? "#2F2F34"
                       : "#8d8d8f"
                   }
