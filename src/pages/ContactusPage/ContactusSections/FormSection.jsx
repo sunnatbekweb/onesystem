@@ -6,6 +6,7 @@ import RightChevron from "../../../assets/icons/RightChevron";
 import { Slide, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
+
 export default function FormSection() {
   useEffect(() => {
     AOS.init({
@@ -13,10 +14,12 @@ export default function FormSection() {
       once: false,
     });
   }, []);
-  const [form, setForm] = useState({ username: "", phone_number: "" });
-  const [correct, setCorrect] = useState({ username: "", phone_number: "" });
-  const [error, setError] = useState({ username: false, phone_number: false });
+
+  const [form, setForm] = useState({ username: "", email: "" });
+  const [correct, setCorrect] = useState({ username: "", email: "" });
+  const [error, setError] = useState({ username: false, email: false });
   const [isFormValid, setIsFormValid] = useState(false);
+
   useEffect(() => {
     if (form.username.length === null) {
       setError({ ...error, username: "*Please fill in the empty blank." });
@@ -44,29 +47,32 @@ export default function FormSection() {
       setError({ ...error, username: false });
     }
   }, [form.username]);
+
   useEffect(() => {
-    const phoneRegexp = /^\+998\d{9}$/;
-    if (form.phone_number.length === null) {
-      setError({ ...error, phone_number: "*Please enter your phone number." });
-      setCorrect({ ...correct, phone_number: false });
-    } else if (!phoneRegexp.test(form.phone_number)) {
-      setError({ ...error, phone_number: "*Please enter a valid phone number." });
-      setCorrect({ ...correct, phone_number: false });
+    const phoneRegexp = /^\+998\d{9}$/; // логику не меняем, только название
+    if (form.email.length === null) {
+      setError({ ...error, email: "*Please enter your phone number." });
+      setCorrect({ ...correct, email: false });
+    } else if (!phoneRegexp.test(form.email)) {
+      setError({ ...error, email: "*Please enter a valid phone number." });
+      setCorrect({ ...correct, email: false });
     } else {
       setCorrect({
         ...correct,
-        phone_number: "This field has been filled correctly!",
+        email: "This field has been filled correctly!",
       });
-      setError({ ...error, phone_number: false });
+      setError({ ...error, email: false });
     }
-  }, [form.phone_number]);
+  }, [form.email]);
+
   useEffect(() => {
-    setIsFormValid(correct.username && correct.phone_number);
+    setIsFormValid(correct.username && correct.email);
   }, [correct]);
+
   const formSubmission = async (e) => {
     e.preventDefault();
     if (isFormValid) {
-      await sendData(form.username, form.phone_number);
+      await sendData(form.username, form.email);
       await axios
         .post(`${import.meta.env.VITE_BASE_URL}/contact/`, form)
         .then((response) => console.log(response.data))
@@ -96,11 +102,12 @@ export default function FormSection() {
       });
     }
   };
-  async function sendData(username, phone_number) {
+
+  async function sendData(username, email) {
     try {
       const TOKEN = import.meta.env.VITE_TELEGRAM_BOT_TOKEN;
       const botID = import.meta.env.VITE_TELEGRAM_BOT_ID;
-      const info = `User  %0A<strong>👤:</strong> ${username}%0A<strong>📧: </strong>${phone_number}`;
+      const info = `User  %0A<strong>👤:</strong> ${username}%0A<strong>📧: </strong>${email}`;
       const response = await fetch(
         `https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=${botID}&text=${info}&parse_mode=html`,
         {
@@ -108,16 +115,17 @@ export default function FormSection() {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ username, phone_number }),
+          body: JSON.stringify({ username, email }),
         }
       );
       const data = await response.json();
       console.log(data);
-      setForm({ username: "", phone_number: "" });
+      setForm({ username: "", email: "" });
     } catch (error) {
       console.error("Error", error);
     }
   }
+
   return (
     <div>
       <ToastContainer
@@ -172,13 +180,14 @@ export default function FormSection() {
                 <p className="text-green-800">{correct.username}</p>
               ) : null}
             </div>
+
             <div
               className="formSection__form-input-boxes w-full flex flex-col justify-between items-start gap-3"
               data-aos="zoom-out-down"
             >
               <label
                 className="formSection__form-label font-bold text-[16px] leading-[16px] text-[#2F2F34] w-full"
-                htmlFor="phone_number"
+                htmlFor="email"
               >
                 Your phone number
               </label>
@@ -187,22 +196,23 @@ export default function FormSection() {
                 className="formSection__form-inputs bg-[#EAEAEA] w-full font-black text-[32px] leading-[28px] tracking-tighter-[-2%] text-[#2F2F34] uppercase outline-none border-none"
                 onChange={(e) => {
                   e.preventDefault();
-                  setForm({ ...form, phone_number: e.target.value.trim() });
+                  setForm({ ...form, email: e.target.value.trim() });
                 }}
                 type="tel"
-                id="phone_number"
+                id="email"
                 placeholder="Enter Your phone number"
                 autoComplete="on"
-                value={form.phone_number}
+                value={form.email}
                 required
               />
-              {error.phone_number && form.phone_number.length > 0 ? (
-                <p className="text-[#CF734A]">{error.phone_number}</p>
+              {error.email && form.email.length > 0 ? (
+                <p className="text-[#CF734A]">{error.email}</p>
               ) : null}
-              {correct.phone_number && form.phone_number.length > 0 ? (
-                <p className="text-green-800">{correct.phone_number}</p>
+              {correct.email && form.email.length > 0 ? (
+                <p className="text-green-800">{correct.email}</p>
               ) : null}
             </div>
+
             <div
               className="formSection__form-input-boxes w-full flex flex-col justify-between items-start gap-3"
               data-aos="zoom-out-down"
@@ -210,7 +220,7 @@ export default function FormSection() {
               <hr className="formSection__form-hr border-none outline-none w-full h-[2px] bg-[#D7D7D8]" />
               <button
                 className={`formSection__form-button w-full flex flex-row justify-between items-start ${
-                  form.username.length && form.phone_number.length > 0
+                  form.username.length && form.email.length > 0
                     ? "text-[#2F2F34]"
                     : "text-[#8d8d8f]"
                 }`}
@@ -221,7 +231,7 @@ export default function FormSection() {
                 </p>
                 <RightChevron
                   fill={
-                    form.username.length && form.phone_number.length > 0
+                    form.username.length && form.email.length > 0
                       ? "#2F2F34"
                       : "#8d8d8f"
                   }
