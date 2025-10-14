@@ -47,7 +47,7 @@ export default function SliderSection() {
       <div className="container slider__container flex flex-col justify-center items-center gap-6 px-[16px] md:px-[36px] md:gap-[121px] lg:px-[48px] xl:gap-[71px]">
         <div className="slider__top-box pt-[340px] flex flex-col justify-center items-center xl:pt-[0px]">
           <h2 className="slider__top-box-title text-[40px] leading-[32px] font-black uppercase text-[#2F2F34] text-center xl:text-[88px] xl:leading-[70px]">
-            Explore our <span className="block">expertise in</span>
+            Bizning loyihalarimizni <br /> o'rganing
           </h2>
         </div>
         {backendData.length > 0 && (

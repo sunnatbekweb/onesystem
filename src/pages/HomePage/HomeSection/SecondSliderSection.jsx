@@ -27,8 +27,7 @@ export default function SecondSliderSection() {
           data-aos="fade-up"
         >
           <h2 className="secondSlider__title text-[40px] leading-[32px] tracking-tighter-[-2%] font-black uppercase text-[#2F2F34] text-center">
-            Explore our{" "}
-            <span className="secondSlider__title-span block">expertise in</span>
+            Bizning loyihalarimizni <br /> o'rganing
           </h2>
         </div>
         {backendData.length > 0 && (

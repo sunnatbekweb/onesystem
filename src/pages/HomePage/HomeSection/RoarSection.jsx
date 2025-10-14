@@ -48,17 +48,7 @@ export default function RoarSection() {
             isScrolled ? "text-white" : "text-[#2F2F34]"
           }`}
         >
-          {isScrolled ? (
-            <>
-              We love what
-              <span className="roar__span-title md:block">we create</span>
-            </>
-          ) : (
-            <>
-              What we love
-              <span className="roar__span-title md:block">to create</span>
-            </>
-          )}
+          Biz yangilik <br /> yaratamiz
         </h2>
         <img
           className="roar__more-images w-full hidden md:block"

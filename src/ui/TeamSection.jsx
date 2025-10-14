@@ -5,13 +5,13 @@ import axios from "axios";
 export default function TeamSection() {
   const title = [
     {
-      titles: "position",
+      titles: "Yo'nalish",
     },
     {
-      titles: "Name",
+      titles: "Ism",
     },
     {
-      titles: "Networking",
+      titles: "Aloqa",
     },
   ];
   const [backendData, setbackendData] = useState([]);
@@ -45,7 +45,7 @@ export default function TeamSection() {
       <section className="team bg-[#2F2F34] pt-[48px] md:pt-[100px] pb-12 lg:pb-0 overflow-x-hidden">
         <div className="container team__container w-full flex flex-col justify-center items-start px-[16px] md:px-[36px] lg:px-[48px]">
           <h4 className="team__title font-black text-[24px] leading-[20px] mb-[44px] tracking-tighter-[-2%] text-white uppercase xl:mb-[24px] xl:opacity-50">
-            Our team
+            Bizning jamoa
           </h4>
           <hr className="team__hr hidden border-none outline-none w-full bg-[#ffffff] h-[2px] opacity-10 mb-[44px] lg:mb-[206px] lg:block" />
           <div className="w-[100%] hidden mb-[31px] xl:flex xl:flex-row xl:justify-between xl:items-start">
@@ -66,13 +66,13 @@ export default function TeamSection() {
               key={item.id}
             >
               <div className="team__position-box hidden">
-                <p className="team__position-box-text">position</p>
+                <p className="team__position-box-text">Yo'nalish</p>
                 <p className="team__position-box-texts text-[16px] leading-[16px] text-white tracking-tighter-[-2%]">
                   {item.position}
                 </p>
               </div>
               <div className="team__name-box w-full flex flex-row justify-between items-start">
-                <p className="team__name-box-text hidden">Name</p>
+                <p className="team__name-box-text hidden">Ism</p>
                 <p className="team__name-box-texts font-black text-4xl tracking-tighter-[-2%] text-white w-[289px] uppercase md:w-full">
                   {item.name}
                 </p>
@@ -88,7 +88,7 @@ export default function TeamSection() {
                 </p>
               </div>
               <div className="team__networking-box w-full flex flex-row justify-center items-start">
-                <p className="team__networking-box-text hidden">Networking</p>
+                <p className="team__networking-box-text hidden">Aloqa</p>
                 <div className="team__networking-mini-box flex flex-row justify-center items-center gap-8 mr-auto md:gap-[49px]">
                   {item.social_media?.map((social) => (
                     <a

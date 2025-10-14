@@ -7,13 +7,13 @@ export default function LinksSection() {
   const data = [
     {
       icon: <InstagramIcon />,
-      texts: "Join to our instagram for watching our videos",
+      texts: "Videolarimizni ko'rish uchun instagram sahifamizga qo'shiling",
       secondIcon: <ChevronIcon />,
       link: "https://www.instagram.com/onesystem.uz?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     },
     {
       icon: <TelegramIcon />,
-      texts: "Read our news and insights in telegram channel",
+      texts: "Bizning yangiliklar va sharhlarimizni telegram kanalimizda o'qing",
       secondIcon: <ChevronIcon />,
       link: "https://t.me/OneSystem_uz",
     },
@@ -23,7 +23,7 @@ export default function LinksSection() {
       <section className="links bg-[#2F2F34] pt-[104px] pb-[41px] xl:pt-[84px] xl:pb-[137px]">
         <div className="container links__container w-full px-[16px] flex flex-col justify-center items-start md:px-[36px] lg:px-[48px]">
           <h4 className="links__title text-white font-black text-[20.04px] leading-[16.03px] tracking-tighter-[-2%] uppercase">
-            Interesting links
+            Qiziqarli havolalar
           </h4>
           <hr className="links__hr border-none outline-none w-full bg-[#444448] h-[2px] mt-[24px]" />
           <div className="links__bottom-box w-full flex flex-col justify-start items-start">

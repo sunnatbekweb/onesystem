@@ -10,29 +10,37 @@ export default function FooterComponent() {
         >
           <div className="footerComponent__mini-boxes flex flex-col justify-center items-center gap-[4px] lg:gap-[20px]">
             <p className="footerComponent__mini-boxes-texts w-full text-center font-bold text-[20px] leading-[20px] tracking-tighter-[-2%] text-[#2F2F34]">
-              Write us
+              Bizga yozing
             </p>
             <a
               className="footerComponent__mini-boxes-email text-center font-black text-[20px] leading-[20px] tracking-tighter-[-2%] text-[#2F2F34] uppercase w-[228px] lg:w-full"
               href="https://t.me/OneSystem_uz"
             >
-              OneSystem IT Group
+              "Onesystem Admin" ustiga bosing
             </a>
           </div>
           <div className="footerComponent__mini-boxes flex flex-col justify-center items-center gap-[4px] lg:gap-[20px]">
             <p className="footerComponent__mini-boxes-texts w-full text-center font-bold text-[20px] leading-[20px] tracking-tighter-[-2%] text-[#2F2F34]">
-              Then
+              So'ng
             </p>
             <h3 className="footerComponent__mini-boxes-titles text-center font-black text-[20px] leading-[20px] tracking-tighter-[-2%] text-[#2F2F34] uppercase w-[228px] lg:w-full">
-              We will schedule the meet
+              "Zoom"da uchrashuv rejalashtiramiz
             </h3>
           </div>
           <div className="footerComponent__mini-boxes flex flex-col justify-center items-center gap-[4px] lg:gap-[20px]">
             <p className="footerComponent__mini-boxes-texts w-full text-center font-bold text-[20px] leading-[20px] tracking-tighter-[-2%] text-[#2F2F34]">
-              After
+              Keyin
             </p>
             <h3 className="footerComponent__mini-boxes-titles text-center font-black text-[20px] leading-[20px] tracking-tighter-[-2%] text-[#2F2F34] uppercase w-[228px] lg:w-full">
-              We will meet in the zoom
+              Biz "zoom"da siz bilan uchrashamiz
+            </h3>
+          </div>
+          <div className="footerLinks__mini-boxes flex flex-col justify-center items-center gap-[20px]">
+            <p className="footerLinks__mini-boxes-texts text-center font-bold text-base tracking-tighter-[-2%] text-[#2F2F34]">
+              Natija
+            </p>
+            <h3 className="footerLinks__mini-boxes-titles text-center font-black text-base tracking-tighter-[-2%] text-[#2F2F34] uppercase w-[248px]">
+              Biz bilan ishonchli shartnoma tuzasiz!
             </h3>
           </div>
         </div>
