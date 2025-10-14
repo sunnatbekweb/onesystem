@@ -49,7 +49,7 @@ export default function FormSection() {
   }, [form.username]);
 
   useEffect(() => {
-    const phoneRegexp = /^\+998\d{9}$/; // логику не меняем, только название
+    const phoneRegexp = /^\+998\s\d{2}\s\d{3}\s\d{2}\s\d{2}$/; // логику не меняем, только название
     if (form.email.length === null) {
       setError({ ...error, email: "*Please enter your phone number." });
       setCorrect({ ...correct, email: false });
@@ -194,17 +194,48 @@ export default function FormSection() {
               <hr className="formSection__form-hr border-none outline-none w-full h-[2px] bg-[#D7D7D8]" />
               <input
                 className="formSection__form-inputs bg-[#EAEAEA] w-full font-black text-[32px] leading-[28px] tracking-tighter-[-2%] text-[#2F2F34] uppercase outline-none border-none"
-                onChange={(e) => {
-                  e.preventDefault();
-                  setForm({ ...form, email: e.target.value.trim() });
-                }}
                 type="tel"
                 id="email"
-                placeholder="Enter Your phone number"
-                autoComplete="on"
+                placeholder="+998 99 123 45 67"
+                pattern="^\+998\s\d{2}\s\d{3}\s\d{2}\s\d{2}$"
+                maxLength={17}
                 value={form.email}
+                onChange={(e) => {
+                  let value = e.target.value;
+
+                  // 1️⃣ Удаляем всё, кроме цифр и "+"
+                  value = value.replace(/[^\d+]/g, "");
+
+                  // 2️⃣ Гарантируем, что номер начинается с +998
+                  if (!value.startsWith("+998")) {
+                    // если пользователь удалил часть кода — восстанавливаем
+                    if (
+                      value.startsWith("+99") ||
+                      value.startsWith("+9") ||
+                      value === "+"
+                    ) {
+                      value = "+998";
+                    } else if (!value.startsWith("+")) {
+                      value = "+998" + value.replace(/^\+?998?/, "");
+                    } else {
+                      value = "+998";
+                    }
+                  }
+
+                  // 3️⃣ Форматируем пробелами: +998 99 123 45 67
+                  value = value
+                    .replace(/^(\+998)(\d{0,2})/, "$1 $2")
+                    .replace(/^(\+998\s\d{2})(\d{0,3})/, "$1 $2")
+                    .replace(/^(\+998\s\d{2}\s\d{3})(\d{0,2})/, "$1 $2")
+                    .replace(/^(\+998\s\d{2}\s\d{3}\s\d{2})(\d{0,2})/, "$1 $2")
+                    .trim();
+
+                  // 4️⃣ Обновляем состояние
+                  setForm({ ...form, email: value });
+                }}
                 required
               />
+
               {error.email && form.email.length > 0 ? (
                 <p className="text-[#CF734A]">{error.email}</p>
               ) : null}
