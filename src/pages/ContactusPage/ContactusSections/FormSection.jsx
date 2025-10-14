@@ -155,7 +155,7 @@ export default function FormSection() {
                 className="formSection__form-label font-bold text-[16px] leading-[16px] text-[#2F2F34] w-full"
                 htmlFor="username"
               >
-                How should we call you
+                Ismingiz
               </label>
               <hr className="formSection__form-hr border-none outline-none w-full h-[2px] bg-[#D7D7D8]" />
               <input
@@ -166,7 +166,7 @@ export default function FormSection() {
                 }}
                 type="text"
                 id="username"
-                placeholder="Enter Your Name"
+                placeholder="Ismingizni kiriting"
                 autoComplete="on"
                 min={3}
                 maxLength={26}
@@ -189,7 +189,7 @@ export default function FormSection() {
                 className="formSection__form-label font-bold text-[16px] leading-[16px] text-[#2F2F34] w-full"
                 htmlFor="email"
               >
-                Your phone number
+                Telefon raqamingiz
               </label>
               <hr className="formSection__form-hr border-none outline-none w-full h-[2px] bg-[#D7D7D8]" />
               <input
@@ -258,7 +258,7 @@ export default function FormSection() {
                 type="submit"
               >
                 <p className="formSection__form-button-text cursor-pointer font-black text-[32px] leading-[28px] tracking-tighter-[-2%] uppercase">
-                  Send
+                  Jo'natish
                 </p>
                 <RightChevron
                   fill={
