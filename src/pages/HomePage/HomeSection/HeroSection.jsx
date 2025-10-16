@@ -81,7 +81,7 @@ export default function HeroSection() {
                       src={item?.icon}
                       alt="icon"
                     />
-                    <h2 className="hero__swiperSlide-title font-black text-center text-[56px] leading-[48px] tracking-tighter-[-2%] uppercase text-white mb-[19px] xl:text-[120px] xl:leading-[100px0] xl:tracking-tighter-[-2%] xl:mb-[34px]">
+                    <h2 className="hero__swiperSlide-title font-black text-center text-4xl tracking-tighter-[-2%] uppercase text-white mb-[19px] md:text-5xl xl:text-[120px] xl:leading-[100px0] xl:tracking-tighter-[-2%] xl:mb-[34px]">
                       {item?.title}
                     </h2>
                   </div>

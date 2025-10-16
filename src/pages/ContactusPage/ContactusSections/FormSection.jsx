@@ -207,7 +207,7 @@ export default function FormSection() {
                 className="formSection__form-inputs bg-[#EAEAEA] w-full font-black text-[32px] leading-[28px] tracking-tighter-[-2%] text-[#2F2F34] uppercase outline-none border-none"
                 type="tel"
                 id="email"
-                placeholder="+998 99 123 45 67"
+                placeholder="+998 __ ___ __ __"
                 pattern="^\+998\s\d{2}\s\d{3}\s\d{2}\s\d{2}$"
                 maxLength={17}
                 value={form.email}
