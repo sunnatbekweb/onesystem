@@ -14,7 +14,7 @@ export default function FooterComponent() {
             </p>
             <a
               className="footerComponent__mini-boxes-email text-center font-black text-[20px] leading-[20px] tracking-tighter-[-2%] text-[#2F2F34] uppercase w-[228px] lg:w-full"
-              href="https://t.me/OneSystem_uz"
+              href="https://t.me/Onesystem_Admin"
             >
               "Onesystem Admin" ustiga bosing
             </a>
@@ -29,17 +29,9 @@ export default function FooterComponent() {
           </div>
           <div className="footerComponent__mini-boxes flex flex-col justify-center items-center gap-[4px] lg:gap-[20px]">
             <p className="footerComponent__mini-boxes-texts w-full text-center font-bold text-[20px] leading-[20px] tracking-tighter-[-2%] text-[#2F2F34]">
-              Keyin
-            </p>
-            <h3 className="footerComponent__mini-boxes-titles text-center font-black text-[20px] leading-[20px] tracking-tighter-[-2%] text-[#2F2F34] uppercase w-[228px] lg:w-full">
-              Biz "zoom"da siz bilan uchrashamiz
-            </h3>
-          </div>
-          <div className="footerLinks__mini-boxes flex flex-col justify-center items-center gap-[20px]">
-            <p className="footerLinks__mini-boxes-texts text-center font-bold text-base tracking-tighter-[-2%] text-[#2F2F34]">
               Natija
             </p>
-            <h3 className="footerLinks__mini-boxes-titles text-center font-black text-base tracking-tighter-[-2%] text-[#2F2F34] uppercase w-[248px]">
+            <h3 className="footerComponent__mini-boxes-titles text-center font-black text-[20px] leading-[20px] tracking-tighter-[-2%] text-[#2F2F34] uppercase w-[228px] lg:w-full">
               Biz bilan ishonchli shartnoma tuzasiz!
             </h3>
           </div>

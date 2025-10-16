@@ -1,0 +1,37 @@
+.crypto {
+}
+.crypto__container {
+}
+.crypto__hr {
+}
+.crypto__title {
+  font-family: "ABCMonumentGrotesk" !important;
+}
+.crypto__image {
+}
+@media (max-width: 1024px) {
+  .crypto {
+  }
+  .crypto__container {
+  }
+  .crypto__hr {
+  }
+  .crypto__title {
+    font-family: "ABCMonumentGrotesk" !important;
+  }
+  .crypto__image {
+  }
+}
+@media (max-width: 767px) {
+  .crypto {
+  }
+  .crypto__container {
+  }
+  .crypto__hr {
+  }
+  .crypto__title {
+    font-family: "ABCMonumentGrotesk" !important;
+  }
+  .crypto__image {
+  }
+}

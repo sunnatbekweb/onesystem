@@ -3,7 +3,6 @@ import "./SliderSection.css";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import axios from "axios";
-import { Link } from "react-router-dom";
 gsap.registerPlugin(ScrollTrigger);
 export default function SliderSection() {
   const [backendData, setBackendData] = useState([]);
@@ -42,12 +41,12 @@ export default function SliderSection() {
   return (
     <section
       ref={sliderRef}
-      className="slider pb-[120px] xl:pt-[226px] xl:pb-[227px] overflow-x-hidden hidden xl:block overflow-y-hidden"
+      className="slider pb-[120px] xl:pt-[226px] xl:pb-[227px] overflow-x-hidden hidden xl:block"
     >
       <div className="container slider__container flex flex-col justify-center items-center gap-6 px-[16px] md:px-[36px] md:gap-[121px] lg:px-[48px] xl:gap-[71px]">
         <div className="slider__top-box pt-[340px] flex flex-col justify-center items-center xl:pt-[0px]">
           <h2 className="slider__top-box-title text-[40px] leading-[32px] font-black uppercase text-[#2F2F34] text-center xl:text-[88px] xl:leading-[70px]">
-            Bizning loyihalarimizni <br /> o'rganing
+            Bizning <span className="block">loyihalarimiz</span>
           </h2>
         </div>
         {backendData.length > 0 && (
@@ -55,24 +54,22 @@ export default function SliderSection() {
             <h3 className="slider__main-title w-[227px] text-center font-black text-[32px] xl:text-[56px] xl:leading-[56px] xl:w-[478px] uppercase">
               {backendData[currentIndex]?.explore_name?.name}
             </h3>
-            <Link to={backendData[currentIndex]?.url}>
-              <div className="slider__mini-box flex flex-col justify-center items-center md:flex-row md:gap-[31px] xl:translate-x-[100px]">
-                <img
-                  ref={(el) => (imageRefs.current[currentIndex] = el)}
-                  className="slider__mini-box-image w-[277px] h-[353px] object-cover rounded-[139px] transition-all duration-500 xl:w-[337px] xl:h-[453px] xl:rounded-[239px]"
-                  src={backendData[currentIndex]?.image}
-                  alt="slide"
-                />
-                <p className="slider__mini-box-text hidden md:block md:w-[152px] font-bold text-[20px] leading-[20px] text-[#2F2F34]">
-                  {backendData[currentIndex]?.text}
-                </p>
-              </div>
-            </Link>
+            <div className="slider__mini-box flex flex-col justify-center items-center md:flex-row md:gap-[31px] xl:translate-x-[100px]">
+              <img
+                ref={(el) => (imageRefs.current[currentIndex] = el)}
+                className="slider__mini-box-image w-[277px] h-[353px] object-cover rounded-[139px] transition-all duration-500 xl:w-[337px] xl:h-[453px] xl:rounded-[239px]"
+                src={backendData[currentIndex]?.image}
+                alt="slide"
+              />
+              <p className="slider__mini-box-text hidden md:block md:w-[152px] font-bold text-[20px] leading-[20px] text-[#2F2F34]">
+                {backendData[currentIndex]?.text}
+              </p>
+            </div>
           </div>
         )}
         <div className="slider__thumb-images mt-6 flex justify-center gap-4 flex-wrap">
           {backendData.map((item, index) => (
-            <div>
+            <a href={item.url} target="_blank" rel="noopener noreferrer">
               <img
                 key={item?.id}
                 src={item?.image}
@@ -84,7 +81,7 @@ export default function SliderSection() {
                     : "border-transparent opacity-50 hover:opacity-100"
                 }`}
               />
-            </div>
+            </a>
           ))}
         </div>
       </div>

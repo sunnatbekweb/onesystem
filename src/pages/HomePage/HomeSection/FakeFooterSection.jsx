@@ -6,12 +6,12 @@ export default function FakeFooterSection() {
     <div>
       <section className="fakeFooter bg-[#FAC125] pt-[88px]">
         <div className="container fakeFooter__container w-full flex flex-col justify-center items-center px-[16px] md:px-[36px] lg:px-[48px]">
-          <h2 className="fakeFooter__title w-full font-black text-6xl tracking-tighter-[-2%] text-[#2F2F34] uppercase text-center mb-[269px] xl:text-8xl xl:mb-[78px]">
-            Boshlash <br /> vaqti keldi!
+          <h2 className="fakeFooter__title w-full font-black text-[40px] leading-[32px] tracking-tighter-[-2%] text-[#2F2F34] uppercase text-center mb-[269px] xl:text-[140px] xl:leading-[110px] xl:w-[1050px] xl:mb-[78px]">
+            Boshlash vaqti keldi!
           </h2>
           <Link to="/contactus">
             <button className="fakeFooter__button">
-              Biz bilan bog'lanish
+              Bog'lanish
               <span></span>
               <span></span>
               <span></span>
@@ -62,7 +62,7 @@ export default function FakeFooterSection() {
           <hr className="fakeFooter__hr border-none outline-none w-full h-[2px] bg-[#2F2F34] opacity-10 mt-[48px] mb-[48px] xl:mt-[94px] xl:mb-[97px]" />
           <div className="fakeFooter__copy-box flex flex-col justify-center items-center gap-8 xl:gap-12">
             <p className="fakeFooter__copy-text text-center font-black text-[20px] leading-[20px] tracking-tighter-[-2%] text-[#2f2f34] uppercase xl:text-[32px] xl:leading-[32px]">
-              &copy; {new Date().getFullYear()} OneSystem IT Group
+              &copy; 2025 OneSystem IT Group&trade;
             </p>
           </div>
           <hr className="fakeFooter__hr border-none outline-none w-full h-[2px] bg-[#2F2F34] opacity-10 mt-[48px] xl:mt-[64px]" />

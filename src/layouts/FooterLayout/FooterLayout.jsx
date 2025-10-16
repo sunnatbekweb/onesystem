@@ -11,7 +11,7 @@ export default function FooterLayout() {
     <div>
       <footer
         className={`footer bg-[#FAC125] pt-[88px] pb-[48px] xl:pt-[200px] xl:pb-[102px]  ${
-          locationPage.pathname === "/aboutus" ? "block" : "hidden"
+          locationPage.pathname === "/services" ? "block" : "hidden"
         }`}
       >
         <div className="container footer__container flex flex-col justify-center items-center px-[16px] md:px-[36px] lg:px-[48px]">

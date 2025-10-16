@@ -44,11 +44,23 @@ export default function RoarSection() {
       <section className="roar relative bg-[#FAC125] pt-[20px]">
         <h2
           ref={titleRef}
-          className={`roar__title sticky top-[40%] pb-[48px] text-center w-full font-black text-[56px] leading-[48px] tracking-tighter-[-2%] uppercase md:pb-0 md:mt-[159px] xl:text-[120px] xl:leading-[100px] transition-all duration-500 ${
+          className={`roar__title sticky top-[40%] pb-[48px] text-center w-full font-black text-[24px] leading-[26px] tracking-tighter-[-2%] uppercase md:pb-0 md:mt-[159px] md:text-[80px] md:leading-[60px] transition-all duration-500 ${
             isScrolled ? "text-white" : "text-[#2F2F34]"
           }`}
         >
-          Biz yangilik <br /> yaratamiz
+          {isScrolled ? (
+            <>
+              Yoqgan narsalarni
+              <span className="roar__span-title md:block">kashf qilamiz</span>
+            </>
+          ) : (
+            <>
+              Kashf qilingan
+              <span className="roar__span-title md:block">
+                narsalarni yoqtiramiz
+              </span>
+            </>
+          )}
         </h2>
         <img
           className="roar__more-images w-full hidden md:block"

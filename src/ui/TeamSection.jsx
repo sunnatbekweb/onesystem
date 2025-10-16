@@ -5,13 +5,13 @@ import axios from "axios";
 export default function TeamSection() {
   const title = [
     {
-      titles: "Yo'nalish",
+      titles: "position",
     },
     {
-      titles: "Ism",
+      titles: "Name",
     },
     {
-      titles: "Aloqa",
+      titles: "Networking",
     },
   ];
   const [backendData, setbackendData] = useState([]);
@@ -42,10 +42,10 @@ export default function TeamSection() {
   }, [cursorPos]);
   return (
     <div>
-      <section className="team bg-[#2F2F34] pt-[48px] md:pt-[100px] pb-12 lg:pb-0 overflow-x-hidden">
+      <section className="team bg-[#2F2F34] pt-[48px] md:pt-[100px] overflow-x-hidden">
         <div className="container team__container w-full flex flex-col justify-center items-start px-[16px] md:px-[36px] lg:px-[48px]">
           <h4 className="team__title font-black text-[24px] leading-[20px] mb-[44px] tracking-tighter-[-2%] text-white uppercase xl:mb-[24px] xl:opacity-50">
-            Bizning jamoa
+            Our team
           </h4>
           <hr className="team__hr hidden border-none outline-none w-full bg-[#ffffff] h-[2px] opacity-10 mb-[44px] lg:mb-[206px] lg:block" />
           <div className="w-[100%] hidden mb-[31px] xl:flex xl:flex-row xl:justify-between xl:items-start">
@@ -66,29 +66,29 @@ export default function TeamSection() {
               key={item.id}
             >
               <div className="team__position-box hidden">
-                <p className="team__position-box-text">Yo'nalish</p>
+                <p className="team__position-box-text">position</p>
                 <p className="team__position-box-texts text-[16px] leading-[16px] text-white tracking-tighter-[-2%]">
                   {item.position}
                 </p>
               </div>
               <div className="team__name-box w-full flex flex-row justify-between items-start">
-                <p className="team__name-box-text hidden">Ism</p>
-                <p className="team__name-box-texts font-black text-4xl tracking-tighter-[-2%] text-white w-[289px] uppercase md:w-full">
+                <p className="team__name-box-text hidden">Name</p>
+                <p className="team__name-box-texts font-black text-[36px] leading-[36px] tracking-tighter-[-2%] text-white w-[289px] uppercase md:w-full">
                   {item.name}
                 </p>
                 <img
-                  className="team__name-user-image object-cover w-[46px] h-[46px] rounded-[50%] md:w-[66px] md:h-[66px]"
+                  className="team__name-user-image object-top w-[46px] h-[46px] rounded-[50%] md:w-[66px] md:h-[66px]"
                   src={item.image}
                   alt="user__image"
                 />
               </div>
               <div className="team__secondPosition-box mb-3 mt-[20px] md:mb-6 md:mt-[40px]">
                 <p className="team__secondPosition-box-texts font-bold text-[16px] leading-[16px] tracking-tight-[-2%] text-white">
-                  {item.name}
+                  {item.position}
                 </p>
               </div>
               <div className="team__networking-box w-full flex flex-row justify-center items-start">
-                <p className="team__networking-box-text hidden">Aloqa</p>
+                <p className="team__networking-box-text hidden">Networking</p>
                 <div className="team__networking-mini-box flex flex-row justify-center items-center gap-8 mr-auto md:gap-[49px]">
                   {item.social_media?.map((social) => (
                     <a
