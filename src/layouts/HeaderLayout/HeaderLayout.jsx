@@ -15,8 +15,8 @@ export default function HeaderLayout() {
               ? "Xizmatlar"
               : locationPage.pathname === "/development"
               ? "DEVELOPMENT"
-              : locationPage.pathname === "/marketing"
-              ? "MARKETING"
+              : locationPage.pathname === "/projects"
+              ? "Projects"
               : "CONTACT US"
           }
         />

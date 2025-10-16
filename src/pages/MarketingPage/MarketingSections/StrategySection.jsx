@@ -1,65 +1,76 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
-import React, { useEffect } from "react"
-import './StrategySection.css'
+import React, { useEffect, useState } from "react";
+import "./StrategySection.css";
+import axios from "axios";
+
 export default function StrategySection() {
-    useEffect(() => {
-        AOS.init({
-            duration: 350,
-            once: false,
-        })
-    }, []);
-    const lines = [
-        "Strategies that make your",
-        "project stand out We",
-        "analyze audiences, craft",
-        "strong brands, and launch",
-        "impactful campaigns to",
-        "ensure your project",
-        "captures attention and",
-        "gains traction.",
-    ];
-    const data = [
-        {
-            texts: 'Our team consists of experienced professionals who have worked in the cryptocurrency market for years. With expertise in blockchain, trading, security, and fintech, we stay ahead of industry trends to deliver top-tier solutions.',
-        },
-        {
-            texts: 'Collaboration is key to our success. By combining diverse skills and a shared passion for crypto, we create solutions that make digital assets more accessible and secure.',
-        },
-        {
-            texts: 'We are driven by innovation and integrity, believing in the power of blockchain to transform the future.Constantly adapting to market changes, we provide secure, transparent, and efficient strategies for our clients.',
-        },
-    ]
-    return (
-        <div>
-            <section className="strategy bg-[#EAEAEA] pt-[214px] md:pt-[214px] lg:pt-[130px] xl:pt-[130px]">
-                <div className="container strategy__container flex flex-col justify-center items-center px-[16px] md:px-[36px] lg:px-[48px]">
-                    <hr className="strategy__hr border-none outline-none w-full h-[2px] bg-[#D7D7D8]" />
-                    <h2 className="strategy__title text-[#2F2F34] font-black pt-[66px] w-full text-[32px] leading-[28px] tracking-tighter-[-2%] uppercase text-center mb-[59px] xl:text-[56px] xl:leading-[56px] xl:w-[958px] xl:mb-[38px] xl:pt-[116px]">
-                        {lines.map((line, index) => (
-                            <span
-                                key={index}
-                                data-aos="fade-up"
-                                data-aos-delay={index * 100}
-                                className="industry__line inline-block transition-all">
-                                {line}
-                            </span>
-                        ))}
-                    </h2>
-                    <div className="strategy__bottom-box w-full mb-[79px] flex flex-col justify-center items-center gap-6 md:gap-8 xl:mb-[116px] xl:w-[746px] xl:flex xl:flex-row xl:flex-wrap xl:justify-start xl:items-start">
-                        {data.map((item, index) => (
-                            <div className="strategy__bottom-mini-boxes flex flex-col justify-center items-center xl:flex xl:flex-row xl:flex-wrap xl:justify-center xl:items-center" key={index}>
-                                <p
-                                    className="strategy__bottom-mini-boxes-texts text-start font-bold text-[16px] leading-[16px] tracking-tighter-[-2%] text-[#8D8D8F] w-[226px] lg:w-[353px]"
-                                    data-aos="fade-up">
-                                    {item.texts}
-                                </p>
-                            </div>
-                        ))}
+  const [projects, setProjects] = useState([]);
+
+  const getProjects = async () => {
+    const response = await axios.get(
+      `${import.meta.env.VITE_BASE_URL}/explore/`
+    );
+
+    setProjects(response.data);
+  };
+
+  useEffect(() => {
+    AOS.init({
+      duration: 350,
+      once: false,
+    });
+
+    getProjects();
+  }, []);
+
+  return (
+    <div>
+      <section className="strategy bg-[#EAEAEA] pt-[214px] md:pt-[214px] lg:pt-[130px] xl:pt-[130px]">
+        <div className="container strategy__container flex flex-col justify-center items-center px-[16px] md:px-[36px] lg:px-[48px]">
+          <div className="py-16">
+            <h2 className="text-4xl font-bold mb-10">Bizning loyihalar</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6">
+              {projects?.map((project) => (
+                <div key={project.id} className="project_card px-3">
+                  <a href={project.url} target="_blank">
+                    <div className="relative">
+                      <img
+                        src={project?.image}
+                        alt="Project image"
+                        width={678}
+                        height={452}
+                        className="aspect-square object-cover"
+                      />
+                      <button className="navigate_button">Ko'rish</button>
                     </div>
-                    <hr className="strategy__hr border-none outline-none w-full h-[2px] bg-[#D7D7D8]" />
+                    <div className="pt-5 pb-2.5 flex items-center justify-between">
+                      <p className="font-medium text-2xl">{project?.explore_name?.name}</p>
+                      <div className="icon">
+                        <svg
+                          width="14"
+                          height="15"
+                          viewBox="0 0 14 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M0.704601 0.929259C0.704601 0.6868 0.901167 0.490234 1.14363 0.490234H13.3192C13.5617 0.490234 13.7583 0.6868 13.7583 0.929259V13.1049C13.7583 13.3474 13.5617 13.5439 13.3192 13.5439C13.0768 13.5439 12.8802 13.3474 12.8802 13.1049V1.98918L0.946708 13.9226C0.775254 14.0941 0.497299 14.0941 0.325851 13.9226C0.154404 13.7512 0.154404 13.4732 0.325851 13.3018L12.2593 1.36828H1.14363C0.901167 1.36828 0.704601 1.17178 0.704601 0.929259Z"
+                            fill="#000000"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <span className="text-lg">Site</span>
+                  </a>
                 </div>
-            </section>
+              ))}
+            </div>
+          </div>
         </div>
-    )
+      </section>
+    </div>
+  );
 }

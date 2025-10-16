@@ -12,8 +12,8 @@ export default function HeaderNavbar() {
       text: "Development",
     },
     {
-      path: "marketing",
-      text: "Marketing",
+      path: "projects",
+      text: "loyihalar",
     },
     {
       path: "contactus",
@@ -79,14 +79,14 @@ export default function HeaderNavbar() {
           <li className="headerNavbar__lists lg:flex lg:flex-col lg:justify-center lg:items-center">
             <NavLink
               className={`headerNavbar__links ${
-                location.pathname === "/marketing"
+                location.pathname === "/projects"
                   ? "active"
                   : "text-[#2f2f34] opacity-50"
               }`}
-              to={"/marketing"}
+              to={"/projects"}
             >
               <p className="headerNavbar__links-text lg:font-bold lg:text-[20px] lg:leading-[20px]">
-                Marketing
+                Loyihalar
               </p>
             </NavLink>
           </li>
