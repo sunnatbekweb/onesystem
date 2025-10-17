@@ -4,6 +4,7 @@ import { IoGrid } from "react-icons/io5";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./StrategySection.css";
+import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom";
 
 export default function StrategySection() {
@@ -19,10 +20,7 @@ export default function StrategySection() {
       );
       setProjects(response.data);
     } catch (error) {
-      console.error(error);
-      if (error.status === 500) {
-        setErrorMessage(error.message);
-      }
+      setErrorMessage(error.message);
     }
   };
 
@@ -85,21 +83,19 @@ export default function StrategySection() {
               ) : (
                 projects?.map((project) => (
                   <div key={project.id} className="project_card px-3">
-                    <a href={project.url} target="_blank">
+                    <Link to={`/project/${project.id}`}>
                       <div className="relative">
                         <img
-                          src={project?.image}
+                          src={project?.image1}
                           alt="Project image"
                           width={678}
                           height={452}
-                          className="aspect-square object-cover"
+                          className="aspect-square object-contain"
                         />
                         <button className="navigate_button">Ko'rish</button>
                       </div>
                       <div className="pt-5 pb-2.5 flex items-center justify-between">
-                        <p className="font-medium text-2xl">
-                          {project?.explore_name?.name}
-                        </p>
+                        <p className="font-medium text-2xl">{project?.title}</p>
                         <div className="icon">
                           <svg
                             width="14"
@@ -117,8 +113,8 @@ export default function StrategySection() {
                           </svg>
                         </div>
                       </div>
-                      <span className="text-lg">Site</span>
-                    </a>
+                      <span className="text-lg">{project?.category?.name}</span>
+                    </Link>
                   </div>
                 ))
               )}
