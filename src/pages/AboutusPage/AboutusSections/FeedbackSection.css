@@ -1,0 +1,238 @@
+.button-prev::after {
+  display: none;
+}
+.button-next::after {
+  display: none;
+}
+.feedback__swiper .swiper-slide {
+  border-radius: 20px;
+  font-size: 18px;
+  background: inherit;
+  max-width: 100%;
+  box-shadow: rgba(47, 47, 52, 0.603) 0px 2px 8px 0px;
+  margin-bottom: 5px;
+}
+.swiper-button-next {
+  box-shadow: rgb(47, 47, 52) 0px 0px 5px 0px, rgb(47, 47, 52) 0px 0px 1px 0px;
+  position: static;
+  height: 56px;
+  margin-top: 0;
+  color: #8d8d8f;
+}
+.swiper-button-prev {
+  box-shadow: rgb(47, 47, 52) 0px 0px 5px 0px, rgb(47, 47, 52) 0px 0px 1px 0px;
+  position: static;
+  height: 56px;
+  margin-top: 0;
+  color: #8d8d8f;
+}
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  box-shadow: rgb(47, 47, 52) 0px 0px 5px 0px, rgb(47, 47, 52) 0px 0px 1px 0px;
+  background: inherit;
+  color: #2f2f34;
+  border: 1px solid rgb(47, 47, 52);
+  opacity: 1;
+}
+.feedback {
+}
+.feedback__container {
+}
+.feedback__left-box {
+}
+.feedback__left-title {
+  font-family: "ABCMonumentGrotesk";
+  color: #2f2f34;
+}
+.feedback__left-text {
+  font-family: "ABCMonumentGrotesk";
+  color: #8d8d8f;
+}
+.feedback__left-buttons {
+  padding: 5px 0 5px 0;
+  font-family: "ABCMonumentGrotesk";
+  color: #2f2f34;
+}
+.feedback__swiper {
+  padding: 0px 8px;
+  width: 100%;
+  height: 100%;
+}
+.feedback__swiper-mini-boxes {
+  position: relative;
+  border-top: 10px solid #2f2f34;
+  border-right: 10px solid #2f2f34;
+  color: rgb(47, 47, 52);
+}
+.feedback__swiper-image {
+  box-shadow: rgb(47, 47, 52) 0px 0px 5px 2px, rgb(47, 47, 52) 0px 0px 1px 0px;
+}
+.feedback__swiper-text-box {
+}
+.feedback__swiper-title {
+  font-family: "ABCMonumentGrotesk";
+  color: #2f2f34;
+}
+.feedback__swiper-text {
+  font-family: "ABCMonumentGrotesk";
+  color: #2f2f34;
+}
+.feedback__swiper-comment {
+  font-family: "ABCMonumentGrotesk";
+  color: #2f2f34;
+}
+@media (max-width: 1024px) {
+  .feedback__swiper .swiper-slide {
+    font-size: 18px;
+    background-image: inherit;
+    border-radius: 20px;
+    max-width: 100%;
+  }
+  .swiper-button-next {
+    position: static;
+    height: 56px;
+    margin-top: 0;
+    color: #8d8d8f;
+    &::after {
+      content: "";
+    }
+  }
+  .swiper-button-prev {
+    position: static;
+    height: 56px;
+    margin-top: 0;
+    color: #8d8d8f;
+    &::after {
+      content: "";
+    }
+  }
+  .swiper-button-prev.swiper-button-disabled,
+  .swiper-button-next.swiper-button-disabled {
+    background-color: inherit;
+    color: #2f2f34;
+    border: 1px solid #2f2f34;
+    opacity: 1;
+  }
+  .feedback {
+  }
+  .feedback__container {
+  }
+  .feedback__left-box {
+  }
+  .feedback__left-title {
+    font-family: "ABCMonumentGrotesk";
+    color: #2f2f34;
+  }
+  .feedback__left-text {
+    font-family: "ABCMonumentGrotesk";
+    color: #8d8d8f;
+  }
+  .feedback__left-buttons {
+    font-family: "ABCMonumentGrotesk";
+    color: #2f2f34;
+  }
+  .feedback__swiper {
+    padding: 0px 8px;
+    width: 100%;
+    height: 100%;
+  }
+  .feedback__swiper-mini-boxes {
+    position: relative;
+    border-top: 10px solid #2f2f34;
+    border-right: 10px solid #2f2f34;
+  }
+  .feedback__swiper-image {
+    box-shadow: rgb(47, 47, 52) 0px 0px 5px 2px, rgb(47, 47, 52) 0px 0px 1px 0px;
+  }
+  .feedback__swiper-text-box {
+  }
+  .feedback__swiper-title {
+    font-family: "ABCMonumentGrotesk";
+    color: #2f2f34;
+  }
+  .feedback__swiper-text {
+    font-family: "ABCMonumentGrotesk";
+    color: #2f2f34;
+  }
+  .feedback__swiper-comment {
+    font-family: "ABCMonumentGrotesk";
+    color: #2f2f34;
+  }
+}
+@media (max-width: 767px) {
+  .feedback__swiper .swiper-slide {
+    font-size: 18px;
+    background-color: inherit;
+    max-width: 100%;
+  }
+  .swiper-button-next {
+    position: static;
+    height: 56px;
+    margin-top: 0;
+    color: #8d8d8f;
+    &::after {
+      content: "";
+    }
+  }
+  .swiper-button-prev {
+    position: static;
+    height: 56px;
+    margin-top: 0;
+    color: #8d8d8f;
+    &::after {
+      content: "";
+    }
+  }
+  .swiper-button-prev.swiper-button-disabled,
+  .swiper-button-next.swiper-button-disabled {
+    background-color: inherit;
+    color: #2f2f34;
+    border: 1px solid #2f2f34;
+    opacity: 1;
+  }
+  .feedback {
+  }
+  .feedback__container {
+  }
+  .feedback__left-box {
+  }
+  .feedback__left-title {
+    font-family: "ABCMonumentGrotesk";
+    color: #2f2f34;
+  }
+  .feedback__left-text {
+    font-family: "ABCMonumentGrotesk";
+    color: #8d8d8f;
+  }
+  .feedback__left-buttons {
+    font-family: "ABCMonumentGrotesk";
+    color: #2f2f34;
+  }
+  .feedback__swiper {
+    padding: 0px 8px;
+    width: 100%;
+    height: 100%;
+  }
+  .feedback__swiper-mini-boxes {
+    position: relative;
+    border-top: 10px solid #2f2f34;
+    border-right: 10px solid #2f2f34;
+  }
+  .feedback__swiper-image {
+    box-shadow: rgb(47, 47, 52) 0px 0px 5px 2px, rgb(47, 47, 52) 0px 0px 1px 0px;
+  }
+  .feedback__swiper-text-box {
+  }
+  .feedback__swiper-title {
+    font-family: "ABCMonumentGrotesk";
+    color: #2f2f34;
+  }
+  .feedback__swiper-text {
+    font-family: "ABCMonumentGrotesk";
+    color: #2f2f34;
+  }
+  .feedback__swiper-comment {
+    font-family: "ABCMonumentGrotesk";
+    color: #2f2f34;
+  }
+}

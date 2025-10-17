@@ -1,0 +1,55 @@
+.industry {
+}
+.industry__container {
+}
+.industry__title {
+  font-family: "ABCMonumentGrotesk";
+}
+.industry__line {
+  font-family: "ABCMonumentGrotesk";
+}
+.industry__bottom-box {
+}
+.industry__bottom-mini-boxes {
+}
+.industry__bottom-mini-boxes-texts {
+  font-family: "ABCMonumentGrotesk";
+}
+@media (max-width: 1024px) {
+  .industry {
+  }
+  .industry__container {
+  }
+  .industry__title {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .industry__line {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .industry__bottom-box {
+  }
+  .industry__bottom-mini-boxes {
+  }
+  .industry__bottom-mini-boxes-texts {
+    font-family: "ABCMonumentGrotesk";
+  }
+}
+@media (max-width: 767px) {
+  .industry {
+  }
+  .industry__container {
+  }
+  .industry__title {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .industry__line {
+    font-family: "ABCMonumentGrotesk";
+  }
+  .industry__bottom-box {
+  }
+  .industry__bottom-mini-boxes {
+  }
+  .industry__bottom-mini-boxes-texts {
+    font-family: "ABCMonumentGrotesk";
+  }
+}

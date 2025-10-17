@@ -4,20 +4,20 @@ import "./HeaderNavbar.css";
 export default function HeaderNavbar() {
   const links = [
     {
-      path: "Services",
-      text: "Xizmatlar",
+      path: "aboutus",
+      text: "HAQIMIZDA",
     },
     {
-      path: "development",
-      text: "Development",
+      path: "services",
+      text: "XIZMATLAR",
     },
     {
       path: "portfolio",
-      text: "Portfolio",
+      text: "PORTFOLIO",
     },
     {
       path: "contactus",
-      text: "Contact us",
+      text: "CONTACT US",
     },
   ];
   const location = useLocation();
@@ -49,6 +49,20 @@ export default function HeaderNavbar() {
           <li className="headerNavbar__lists lg:flex lg:flex-col lg:justify-center lg:items-center">
             <NavLink
               className={`headerNavbar__links ${
+                location.pathname === "/aboutus"
+                  ? "active"
+                  : "text-[#2f2f34] opacity-50"
+              }`}
+              to={"/aboutus"}
+            >
+              <p className="headerNavbar__links-text lg:font-bold lg:text-[20px] lg:leading-[20px]">
+                Haqimizda
+              </p>
+            </NavLink>
+          </li>
+          <li className="headerNavbar__lists lg:flex lg:flex-col lg:justify-center lg:items-center">
+            <NavLink
+              className={`headerNavbar__links ${
                 location.pathname === "/services"
                   ? "active"
                   : "text-[#2f2f34] opacity-50"
@@ -57,20 +71,6 @@ export default function HeaderNavbar() {
             >
               <p className="headerNavbar__links-text lg:font-bold lg:text-[20px] lg:leading-[20px]">
                 Xizmatlar
-              </p>
-            </NavLink>
-          </li>
-          <li className="headerNavbar__lists lg:flex lg:flex-col lg:justify-center lg:items-center">
-            <NavLink
-              className={`headerNavbar__links ${
-                location.pathname === "/development"
-                  ? "active"
-                  : "text-[#2f2f34] opacity-50"
-              }`}
-              to={"/development"}
-            >
-              <p className="headerNavbar__links-text lg:font-bold lg:text-[20px] lg:leading-[20px]">
-                Development
               </p>
             </NavLink>
           </li>

@@ -33,9 +33,9 @@ export default function StrategySection() {
           <div className="py-16">
             <h2 className="text-4xl font-bold mb-10">Bizning loyihalar</h2>
             <div className="">
-              <Link to={"#"} className="grid p-2.5">
+              <button className="grid p-2.5">
                 <IoGrid className="text-2xl" />
-              </Link>
+              </button>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6">
               {projects?.map((project) => (

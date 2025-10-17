@@ -2,8 +2,8 @@ import App from "../App";
 import React, { useEffect, useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import HomePage from "../pages/HomePage/HomePage";
+import AboutusPage from "../pages/AboutusPage/AboutusPage";
 import ServicePage from "../pages/ServicesPage/ServicesPage";
-import DevelopmentPage from "../pages/DevelopmentPage/DevelopmentPage";
 import MarketingPage from "../pages/MarketingPage/MarketingPage";
 import ContactusPage from "../pages/ContactusPage/ContactusPage";
 import NotFoundSection from "../ui/NotFoundSection";
@@ -29,8 +29,8 @@ const Router = () => {
           }
         >
           <Route path="/" element={<HomePage />} />
+          <Route path="/aboutus" element={<AboutusPage />} />
           <Route path="/services" element={<ServicePage />} />
-          <Route path="/development" element={<DevelopmentPage />} />
           <Route path="/portfolio" element={<MarketingPage />} />
           <Route path="/contactus" element={<ContactusPage />} />
         </Route>

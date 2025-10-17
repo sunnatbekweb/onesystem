@@ -11,13 +11,13 @@ export default function HeaderLayout() {
       {locationPage.pathname !== "/" && (
         <TopWallpaper
           text={
-            locationPage.pathname === "/services"
-              ? "Xizmatlar"
-              : locationPage.pathname === "/development"
-              ? "DEVELOPMENT"
+            locationPage.pathname === "/aboutus"
+              ? "HAQIMIZDA"
+              : locationPage.pathname === "/services"
+              ? "XIZMATLAR"
               : locationPage.pathname === "/portfolio"
-              ? "Portfolio"
-              : "CONTACT US"
+              ? "PORTFOLIO"
+              : "Bog'lanish"
           }
         />
       )}
