@@ -1,8 +1,10 @@
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { IoGrid } from "react-icons/io5";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import React, { useEffect, useState } from "react";
 import "./StrategySection.css";
-import axios from "axios";
+import { Link } from "react-router-dom";
 
 export default function StrategySection() {
   const [projects, setProjects] = useState([]);
@@ -30,6 +32,11 @@ export default function StrategySection() {
         <div className="container strategy__container flex flex-col justify-center items-center px-[16px] md:px-[36px] lg:px-[48px]">
           <div className="py-16">
             <h2 className="text-4xl font-bold mb-10">Bizning loyihalar</h2>
+            <div className="">
+              <Link to={"#"} className="grid p-2.5">
+                <IoGrid className="text-2xl" />
+              </Link>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6">
               {projects?.map((project) => (
                 <div key={project.id} className="project_card px-3">
@@ -45,7 +52,9 @@ export default function StrategySection() {
                       <button className="navigate_button">Ko'rish</button>
                     </div>
                     <div className="pt-5 pb-2.5 flex items-center justify-between">
-                      <p className="font-medium text-2xl">{project?.explore_name?.name}</p>
+                      <p className="font-medium text-2xl">
+                        {project?.explore_name?.name}
+                      </p>
                       <div className="icon">
                         <svg
                           width="14"
