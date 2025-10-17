@@ -9,6 +9,34 @@
   font-family: "ABCMonumentGrotesk";
 }
 
+.tab_button {
+  display: grid;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.tab_button:hover > svg > path {
+  transition: all 0.3s ease;
+}
+.tab_button:hover {
+  border-color: #fac125;
+  color: #fac125;
+}
+.tab_button:hover > svg > path {
+  fill: #fac125;
+}
+
+.tab_button.active_tab {
+  border-color: #fac125;
+  color: #fac125;
+}
+
+.tab_button.active_tab > svg > path {
+  fill: #fac125;
+}
+
 .project_card .navigate_button {
   width: 160px;
   height: 48px;
