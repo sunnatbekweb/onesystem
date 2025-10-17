@@ -4,7 +4,7 @@ import { IoGrid } from "react-icons/io5";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./StrategySection.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export default function StrategySection() {
   const [projects, setProjects] = useState([]);
