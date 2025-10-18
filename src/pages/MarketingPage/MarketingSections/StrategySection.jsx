@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import { IoGrid } from "react-icons/io5";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./StrategySection.css";
-import { Link } from "react-router-dom";
-// import { Link } from "react-router-dom";
 
 export default function StrategySection() {
   const [projects, setProjects] = useState([]);
@@ -83,7 +82,7 @@ export default function StrategySection() {
               ) : (
                 projects?.map((project) => (
                   <div key={project.id} className="project_card px-3">
-                    <Link to={`/project/${project.id}`}>
+                    <Link to={`/portfolio/${project.id}`}>
                       <div className="relative">
                         <img
                           src={project?.image1}

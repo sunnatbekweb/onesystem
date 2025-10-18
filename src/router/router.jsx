@@ -8,6 +8,8 @@ import MarketingPage from "../pages/MarketingPage/MarketingPage";
 import ContactusPage from "../pages/ContactusPage/ContactusPage";
 import NotFoundSection from "../ui/NotFoundSection";
 import ProgressBar from "../ui/ProgressBar";
+import { PortfolioDetail } from "../pages/PortfolioDetail";
+
 const Router = () => {
   const [isLoading, setIsLoading] = useState(true);
   const path = useLocation();
@@ -32,6 +34,7 @@ const Router = () => {
           <Route path="/aboutus" element={<AboutusPage />} />
           <Route path="/services" element={<ServicePage />} />
           <Route path="/portfolio" element={<MarketingPage />} />
+          <Route path="/portfolio/:id" element={<PortfolioDetail />} />
           <Route path="/contactus" element={<ContactusPage />} />
         </Route>
         <Route path="*" element={<NotFoundSection />} />
