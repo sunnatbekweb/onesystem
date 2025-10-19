@@ -1,9 +1,9 @@
 import React from "react";
-import "./HeaderLayout.css";
 import HeaderLogo from "./components/HeaderLogo";
 import HeaderNavbar from "./components/HeaderNavbar";
 import { useLocation } from "react-router-dom";
 import TopWallpaper from "../../ui/TopWallpaper";
+import "./HeaderLayout.css";
 export default function HeaderLayout() {
   const locationPage = useLocation();
   return (
@@ -17,7 +17,9 @@ export default function HeaderLayout() {
               ? "XIZMATLAR"
               : locationPage.pathname === "/portfolio"
               ? "PORTFOLIO"
-              : "Bog'lanish"
+              : location.pathname === "/contactus"
+              ? "Bo'glanish"
+              : ""
           }
         />
       )}
