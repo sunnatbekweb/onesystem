@@ -46,6 +46,7 @@ export const PortfolioDetail = () => {
 							<p className="text-sm md:text-lg whitespace-pre-line">{project?.description}</p>
 
 							<div className="pt-5 md:pt-10 flex flex-col gap-y-10">
+								<Image src={project?.image1} />
 								<Image src={project?.image2} />
 								<Image src={project?.image3} />
 
