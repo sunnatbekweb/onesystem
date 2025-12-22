@@ -1,29 +1,13 @@
-import React, { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
-import axios from "axios"
+import { Link, useParams } from "react-router-dom"
+import { useGetProjectById } from "../../hooks/useGetProjectById"
+import DiscussSection from "../ContactusPage/ContactusSections/DiscussSection"
+import FormSection from "../ContactusPage/ContactusSections/FormSection"
 import { Image } from "./ui/Image"
 import { Video } from "./ui/Video"
-import FormSection from "../ContactusPage/ContactusSections/FormSection"
-import DiscussSection from "../ContactusPage/ContactusSections/DiscussSection"
 
 export const PortfolioDetail = () => {
 	const params = useParams()
-	const [project, setProject] = useState()
-
-	const getProjectById = async () => {
-		try {
-			const response = await axios.get(
-				`${import.meta.env.VITE_BASE_URL}/osprojects/${params.id}/`
-			)
-			setProject(response.data)
-		} catch (error) {
-			console.error(error)
-		}
-	}
-
-	useEffect(() => {
-		getProjectById()
-	}, [])
+	const { project } = useGetProjectById({ id: params.id })
 
 	return (
 		<>
@@ -39,11 +23,18 @@ export const PortfolioDetail = () => {
 									{project?.category}
 								</span> */}
 							</div>
-							{/* <img src={project?.image1} alt={project?.title} className="w-fit" /> */}
+							<Link
+								to={project?.url}
+								className="text-2xl font-semibold underline hover:text-amber-400"
+							>
+								Ko'rish
+							</Link>
 						</div>
 
 						<div className="pt-6 md:pt-8">
-							<p className="text-sm md:text-lg whitespace-pre-line">{project?.description}</p>
+							<p className="text-sm md:text-lg whitespace-pre-line">
+								{project?.description}
+							</p>
 
 							<div className="pt-5 md:pt-10 flex flex-col gap-y-10">
 								<Image src={project?.image1} />

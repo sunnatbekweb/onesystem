@@ -1,52 +1,20 @@
+import { useGetCategories } from "@/hooks/useGetCategories"
+import { useGetProjects } from "@/hooks/useGetProjects"
 import AOS from "aos"
 import "aos/dist/aos.css"
-import axios from "axios"
 import { useEffect, useState } from "react"
 import { IoGrid } from "react-icons/io5"
 import { Link } from "react-router-dom"
 import "./StrategySection.css"
-import React from "react"
 
 export default function StrategySection() {
-	const [projects, setProjects] = useState([])
-	const [errorMessage, setErrorMessage] = useState("")
-	const [categories, setCategories] = useState([])
+	const { categories } = useGetCategories()
 	const [categoryTab, setCategoryTab] = useState("")
-
-	const getProjects = async (category = "") => {
-		try {
-			const url = category
-				? `${import.meta.env.VITE_BASE_URL}/osprojects/?category=${category}`
-				: `${import.meta.env.VITE_BASE_URL}/osprojects/`
-
-			const response = await axios.get(url)
-			setProjects(response.data)
-			setErrorMessage("")
-		} catch (error) {
-			setErrorMessage(error.message)
-		}
-	}
-
-	const getCategories = async () => {
-		try {
-			const response = await axios.get(
-				`${import.meta.env.VITE_BASE_URL}/categories/`
-			)
-			setCategories(response.data)
-		} catch (error) {
-			console.error(error)
-		}
-	}
+	const { projects, errorMessage } = useGetProjects({ category: categoryTab })
 
 	useEffect(() => {
 		AOS.init({ duration: 350, once: false })
-		getCategories()
-		getProjects()
 	}, [])
-
-	useEffect(() => {
-		getProjects(categoryTab)
-	}, [categoryTab])
 
 	return (
 		<section className="strategy bg-[#EAEAEA] pt-[214px] md:pt-[214px] lg:pt-[130px] xl:pt-[130px]">
